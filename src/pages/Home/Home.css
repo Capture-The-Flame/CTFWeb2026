@@ -1,0 +1,87 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  display: block;
+}
+
+.home {
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  scroll-padding-top: var(--nav-h, 90px);
+}
+
+.slide {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  line-height: 0;
+  overflow: hidden;
+  scroll-margin-top: var(--nav-h, 90px);
+}
+
+.slide-art {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.anchor {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  padding: 0 1rem;
+  scroll-margin-top: var(--nav-h, 90px);
+}
+
+.anchor--seam {
+  margin-top: -10vh;
+  margin-bottom: 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  padding: 4rem 1rem 2rem;
+  pointer-events: none;
+}
+
+.overlay-card {
+  pointer-events: auto;
+
+  width: min(700px, 92vw);
+  max-width: 92vw;
+
+  overflow: hidden;
+}
+
+.overlay-card > * {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.overlay-card * {
+  max-width: 100% !important;
+}
+
+@media (max-width: 768px) {
+  .overlay { padding-top: 3.5rem; }
+  .overlay-card { width: min(560px, 92vw); }
+  .anchor--seam { margin-top: -8vh; margin-bottom: -5vh; }
+}

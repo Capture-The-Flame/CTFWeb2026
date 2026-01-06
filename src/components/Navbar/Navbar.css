@@ -1,0 +1,27 @@
+:root { --nav-h: 64px; }
+
+/* Fixed transparent overlay */
+.navbar{
+  position: fixed;
+  top:0; left:0; right:0;
+  height: var(--nav-h);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 16px;
+  padding: 0 16px;
+
+  background: rgba(0,0,0,.25);
+    
+  color:#fff;
+  z-index: 10000;
+}
+
+.logo { height: 36px; width: auto; display: block; }
+
+.nav-links { display:flex; gap:16px; align-items:center; }
+.nav-link {
+  color:#fff; text-decoration:none; font-weight:600;
+  line-height:1; padding:8px 10px; border-radius:6px;
+}
+.nav-link:hover { text-decoration: underline; }
