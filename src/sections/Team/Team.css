@@ -1,0 +1,85 @@
+.team-section {
+    padding: 20px 20px;
+    text-align: center;
+    font-family: "IM Fell English", serif; 
+}
+  
+.team-section h1 {
+    margin-bottom: 20px;
+    font-size: xx-large;
+    color: #000000;
+    background-image: url('../../src/assets/profilepics/old-scroll2.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 130px 20px;
+}
+  
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 2fr));
+    gap: 5px;
+    margin: 0 auto;
+}
+  
+.team-card {
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding: 10px;
+    border-radius: 5px;
+}
+  
+.team-card:hover {
+    transform: translateY(-5px);
+}
+  
+.team-image-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+  
+.team-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.5); 
+}
+  
+.team-image.hover {
+    opacity: 0;
+}
+  
+.team-card:hover .team-image.hover {
+    opacity: 1;
+}
+  
+.team-card:hover .team-image.default {
+    opacity: 0;
+}
+
+.team-info {
+    color: #000000;
+    background-image: url('../../src/assets/profilepics/old-scroll2.png');
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 10px;
+}
+
+.team-info h3 {
+    margin: 10px 5px;
+    font-weight: 600;
+}
+  
+.team-info p {
+    font-weight: 400;
+}
