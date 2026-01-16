@@ -7,6 +7,8 @@ import ground from "../../assets/backgroundArt/CTF_Grass-Stone1.svg";
 import stoneTransition from "../../assets/backgroundArt/CTF_Stone2.svg";
 import stone from "../../assets/backgroundArt/CTF_Stone3.svg";
 import dragon from "../../assets/backgroundArt/dragon_lair.svg";
+import cloud from "../../assets/pieces/ctf_cloud.svg";
+
 
 import About from "../../sections/About/About.jsx";
 import Schedule from "../../sections/Schedule/Schedule.jsx";
@@ -21,6 +23,24 @@ export default function Home() {
 
             <section id="home" className="slide slide--home">
                 <img src={home} alt="chicago skyline" className="slide-art"/>
+                
+                <a 
+                    href="#register"
+                    className="cloud-btn cloud-btn--left"
+                    aria-label="Register"
+                >
+                    <img src={cloud} alt="register"/>
+                    <span className="cloud-label">Register</span>
+                </a>
+
+                <a 
+                    href="#cyberpack"
+                    className="cloud-btn cloud-btn--right"
+                    aria-label="cyberpack"
+                >
+                    <img src={cloud} alt="cyberpack"/>
+                    <span className="cloud-label">Cyberpack</span>
+                </a>
             </section>
 
             {/* About Anchor */}

@@ -12,17 +12,14 @@ html, body, #root {
 
 .home {
   width: 100%;
-  max-width: 100%;
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
-
   scroll-padding-top: var(--nav-h, 90px);
 }
 
 .slide {
   width: 100%;
-  max-width: 100%;
   position: relative;
   line-height: 0;
   overflow: hidden;
@@ -32,8 +29,7 @@ html, body, #root {
 .slide-art {
   display: block;
   width: 100%;
-  max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .anchor {
@@ -48,7 +44,7 @@ html, body, #root {
 }
 
 .anchor--seam {
-  margin-top: -10vh;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -65,7 +61,7 @@ html, body, #root {
 .overlay-card {
   pointer-events: auto;
 
-  width: min(700px, 92vw);
+  width: min(1000px, 92vw);
   max-width: 92vw;
 
   overflow: hidden;
@@ -80,8 +76,52 @@ html, body, #root {
   max-width: 100% !important;
 }
 
+.cloud-btn {
+  position: absolute;
+  top: clamp(70px, 18vh, 190px);
+  z-index: 3;
+  
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
+  display: inline-block;
+}
+
+.cloud-btn img {
+  width: clamp(120px, 18vw, 260px);
+  height: auto;
+  display: block;
+}
+
+.cloud-btn--left {
+  left: clamp(1rem, 4vw, 4rem);
+}
+
+.cloud-btn--right {
+  right: clamp(1rem, 4vw, 4rem);
+}
+
+.cloud-label {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) translateY(-8%);
+  line-height: 1;
+
+  text-align: center;
+  font-family: "fellEnglish", monospace;
+  font-size: clamp(1.2rem, 2.2vw, 2rem);
+  letter-spacing: 0.15rem;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5), 0 0 8px rgba(0,0,0,0.35);
+  pointer-events: none;
+}
+
 @media (max-width: 768px) {
   .overlay { padding-top: 3.5rem; }
   .overlay-card { width: min(560px, 92vw); }
-  .anchor--seam { margin-top: -8vh; margin-bottom: -5vh; }
 }
+
+
