@@ -1,0 +1,26 @@
+import aboutScroll from "../../assets/backgroundArt/vertical_scroll_00_transparent.svg";
+import "./About.css";
+
+export default function About() {
+  return (
+    <section className="about-section">
+      <div className="about-frame">
+        <img  src={aboutScroll}
+              alt=""
+              aria-hidden="true"
+              className="about-scroll"
+        />
+
+        <div className="about-content">
+          <h2 className="about-title">About</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
