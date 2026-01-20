@@ -1,25 +1,25 @@
 .team-section {
-    padding: 20px 20px;
+    padding: 10px 10px;
     text-align: center;
     font-family: "fellEnglish", monospace; 
 }
   
-.team-section h1 {
-    margin-bottom: 20px;
+.team-section h2 {
+    margin-bottom: 5px;
     font-size: xx-large;
     color: #000000;
-    background-image: url('../../src/assets/profilepics/old-scroll2.png');
+    background-image: url('../../src/assets/pieces/vertical_scroll_00_transparent.svg');
     background-size: contain;
-    background-position: center;
+    background-position: center -12px;
     background-repeat: no-repeat;
-    padding: 130px 20px;
+    padding: 50px 15px;
 }
   
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 2fr));
-    gap: 5px;
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
+    /* gap: 0px;
+    margin: 0 auto; */
 }
   
 .team-card {
@@ -37,25 +37,43 @@
   
 .team-image-container {
     position: relative;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 10px;
-    border-radius: 50%;
-    overflow: hidden;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 0;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-emblems {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
 }
   
 .team-image {
-    width: 100%;
-    height: 100%;
+    width: 90px;
+    height: 90px;
     object-fit: cover;
+    border-radius: 50%;
     position: absolute;
-    top: 0;
-    left: 0;
-    box-shadow: 0 0 5px rgba(0, 255, 255, 0.5); 
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    /* box-shadow: 0 0 5px rgba(0, 255, 255, 0.5); */
 }
   
 .team-image.hover {
     opacity: 0;
+    z-index: 2;
+    /* box-shadow: 0 0 5px rgba(0, 255, 255, 0.5); Add glow effect on hover image */ 
 }
   
 .team-card:hover .team-image.hover {
@@ -68,18 +86,18 @@
 
 .team-info {
     color: #000000;
-    background-image: url('../../src/assets/profilepics/old-scroll2.png');
+    background-image: url("../../src/assets/pieces/vertical_scroll_00_transparent.svg");
     background-size: contain; 
-    background-position: center;
+    background-position: center -12px;
     background-repeat: no-repeat;
-    padding: 50px 10px;
+    padding: 15px 5px;
 }
 
 .team-info h3 {
-    margin: 10px 5px;
-    font-weight: 600;
+    margin: 5px 0px;
+    font-size: medium;
 }
   
 .team-info p {
-    font-weight: 400;
+    font-size: small;
 }
