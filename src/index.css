@@ -1,3 +1,4 @@
+/* GLOBAL RESET */
 *,
 *::before,
 *::after { box-sizing: border-box; }
@@ -5,10 +6,8 @@
 :root { --nav-h: 64px; }
 
 html, body, #root {
+  height: 100%;
   margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow-x: hidden;
 }
 
 html, body, #root {
@@ -25,18 +24,11 @@ html, body, #root {
 
 html { scroll-behavior: smooth; }
 
-* {
-  box-sizing: border-box;
-}
 
-html, body, #root {
-  width: 100%;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
-#root {
-  display: block;
+@font-face {
+  font-family: "fellEnglish";
+  src: url("./assets/font/IMFellEnglish-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
