@@ -1,0 +1,15 @@
+<svg width="252" height="71" viewBox="0 0 252 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="7" y="7" width="238" height="58" fill="#E9CCE1"/>
+<rect x="7" y="51" width="7" height="7" fill="black"/>
+<rect x="14" y="58" width="7" height="7" fill="black"/>
+<rect x="21" y="65" width="210" height="6" fill="black"/>
+<rect width="7" height="7" transform="matrix(1 0 0 -1 7 21)" fill="black"/>
+<rect width="7" height="7" transform="matrix(1 0 0 -1 14 14)" fill="black"/>
+<rect width="7" height="7" transform="matrix(1 0 0 -1 231 14)" fill="black"/>
+<rect width="7" height="7" transform="matrix(1 0 0 -1 238 21)" fill="black"/>
+<rect width="7" height="30" transform="matrix(1 0 0 -1 245 51)" fill="black"/>
+<rect width="7" height="30" transform="matrix(1 0 0 -1 0 51)" fill="black"/>
+<rect x="231" y="58" width="7" height="7" fill="black"/>
+<rect x="238" y="51" width="7" height="7" fill="black"/>
+<rect width="210" height="7" transform="matrix(1 0 0 -1 21 7)" fill="black"/>
+</svg>

@@ -1,0 +1,39 @@
+<svg width="252" height="72" viewBox="0 0 252 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="7" y="7" width="238" height="58" fill="#E9CCE1"/>
+<rect x="7" y="51" width="7" height="7" fill="black"/>
+<rect x="14" y="58" width="7" height="7" fill="black"/>
+<rect x="21" y="65" width="210" height="6" fill="black"/>
+<rect width="7" height="7" transform="matrix(1 0 0 -1 7 21)" fill="black"/>
+<rect width="7" height="7" transform="matrix(1 0 0 -1 14 14)" fill="black"/>
+<rect width="7" height="7" transform="matrix(1 0 0 -1 231 14)" fill="black"/>
+<rect width="7" height="7" transform="matrix(1 0 0 -1 238 21)" fill="black"/>
+<rect width="7" height="30" transform="matrix(1 0 0 -1 245 51)" fill="black"/>
+<rect width="7" height="30" transform="matrix(1 0 0 -1 0 51)" fill="black"/>
+<rect x="231" y="58" width="7" height="7" fill="black"/>
+<rect x="238" y="51" width="7" height="7" fill="black"/>
+<rect width="210" height="7" transform="matrix(1 0 0 -1 21 7)" fill="black"/>
+<rect width="7" height="7" transform="matrix(1 0 0 -1 14 7)" fill="#FFC551"/>
+<rect width="7" height="7" transform="matrix(1 0 0 -1 7 14)" fill="#FF0000"/>
+<rect width="7" height="7" transform="matrix(1 0 0 -1 238 14)" fill="#FF0000"/>
+<rect width="7" height="7" transform="matrix(1 0 0 -1 238 65)" fill="#FF0000"/>
+<rect width="7" height="7" transform="matrix(1 0 0 -1 7 65)" fill="#FF0000"/>
+<rect width="7" height="7" transform="matrix(1 0 0 -1 7 7)" fill="#FFC551"/>
+<rect width="7" height="7" transform="matrix(1 0 0 -1 0 7)" fill="#FFC551"/>
+<rect width="7" height="7" transform="matrix(1 0 0 -1 0 14)" fill="#FFC551"/>
+<rect width="7" height="7" transform="matrix(1 0 0 -1 0 21)" fill="#FFC551"/>
+<rect x="14" y="65" width="7" height="7" fill="#FFC551"/>
+<rect x="7" y="65" width="7" height="7" fill="#FFC551"/>
+<rect y="65" width="7" height="7" fill="#FFC551"/>
+<rect y="58" width="7" height="7" fill="#FFC551"/>
+<rect y="51" width="7" height="7" fill="#FFC551"/>
+<rect x="238" y="7" width="7" height="7" transform="rotate(180 238 7)" fill="#FFC551"/>
+<rect x="245" y="7" width="7" height="7" transform="rotate(180 245 7)" fill="#FFC551"/>
+<rect x="252" y="7" width="7" height="7" transform="rotate(180 252 7)" fill="#FFC551"/>
+<rect x="252" y="14" width="7" height="7" transform="rotate(180 252 14)" fill="#FFC551"/>
+<rect x="252" y="21" width="7" height="7" transform="rotate(180 252 21)" fill="#FFC551"/>
+<rect width="7" height="7" transform="matrix(-1 0 0 1 238 65)" fill="#FFC551"/>
+<rect width="7" height="7" transform="matrix(-1 0 0 1 245 65)" fill="#FFC551"/>
+<rect width="7" height="7" transform="matrix(-1 0 0 1 252 65)" fill="#FFC551"/>
+<rect width="7" height="7" transform="matrix(-1 0 0 1 252 58)" fill="#FFC551"/>
+<rect width="7" height="7" transform="matrix(-1 0 0 1 252 51)" fill="#FFC551"/>
+</svg>

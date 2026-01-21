@@ -5,14 +5,14 @@
 }
   
 .team-section h2 {
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     font-size: xx-large;
     color: #000000;
-    background-image: url('../../src/assets/pieces/vertical_scroll_00_transparent.svg');
+    background-image: url('../../src/assets/pieces/nameplate7.svg');
     background-size: contain;
-    background-position: center -12px;
     background-repeat: no-repeat;
-    padding: 50px 15px;
+    background-position: center 0px;
+    padding: 50px 40px; 
 }
   
 .team-grid {
@@ -27,8 +27,7 @@
     color: #000000;
     cursor: pointer;
     transition: transform 0.3s ease;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 5px;
 }
   
 .team-card:hover {
@@ -40,7 +39,7 @@
     width: 180px;
     height: 180px;
     margin: 0 auto 0;
-    overflow: visible;
+    overflow: visible; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,9 +53,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 0;
+    z-index: 0; 
 }
-  
+
 .team-image {
     width: 90px;
     height: 90px;
@@ -66,8 +65,7 @@
     top: 54%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
-    /* box-shadow: 0 0 5px rgba(0, 255, 255, 0.5); */
+    z-index: 1; 
 }
   
 .team-image.hover {
@@ -86,18 +84,28 @@
 
 .team-info {
     color: #000000;
-    background-image: url("../../src/assets/pieces/vertical_scroll_00_transparent.svg");
+    position: relative;
+    background-image: url('../../src/assets/pieces/nameplate6.svg');
     background-size: contain; 
-    background-position: center -12px;
+    background-position: center;
     background-repeat: no-repeat;
-    padding: 15px 5px;
+    width: 180px;
+    height: 70px; 
+    margin: -10px auto 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px 10px;
+    z-index: 2;
 }
 
 .team-info h3 {
-    margin: 5px 0px;
     font-size: medium;
+    margin: -1;
 }
-  
+
 .team-info p {
-    font-size: small;
+    font-size: x-small;
+    margin: 0;
 }

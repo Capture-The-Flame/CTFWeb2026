@@ -172,7 +172,7 @@ export default function Team() {
       emblems: webdev_emblems
     },
     {
-      name: "WebDev Member 1",
+      name: "Aashika",
       role: "Web Development Member",
       image: "../../src/assets/profilepics/Laios_AB_Profile.webp",
       hoverImage: "../../src/assets/profilepics/dungeon-meshi-laios.png",
@@ -180,7 +180,7 @@ export default function Team() {
       emblems: webdev_emblems
     },
     {
-      name: "WebDev Member 2",
+      name: "Aye",
       role: "Web Development Member",
       image: "../../src/assets/profilepics/Laios_AB_Profile.webp",
       hoverImage: "../../src/assets/profilepics/dungeon-meshi-laios.png",
@@ -188,7 +188,15 @@ export default function Team() {
       emblems: webdev_emblems
     },
     {
-      name: "WebDev Member 3",
+      name: "Dylan",
+      role: "Web Development Member",
+      image: "../../src/assets/profilepics/Laios_AB_Profile.webp",
+      hoverImage: "../../src/assets/profilepics/dungeon-meshi-laios.png",
+      linkedin: "https://linkedin.com/in/xxx",
+      emblems: webdev_emblems
+    },
+    {
+      name: "Teegan",
       role: "Web Development Member",
       image: "../../src/assets/profilepics/Laios_AB_Profile.webp",
       hoverImage: "../../src/assets/profilepics/dungeon-meshi-laios.png",
@@ -252,7 +260,7 @@ export default function Team() {
         ))}
       </div>
       <div className="team-grid">
-        {commsMembers.map((member, index) => (
+        {webdevMembers.map((member, index) => (
           <a 
             key={index}x
             href={member.linkedin} 
@@ -294,27 +302,6 @@ export default function Team() {
         ))}
       </div>
       <div className="team-grid">
-        {logMembers.map((member, index) => (
-          <a 
-            key={index}x
-            href={member.linkedin} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="team-card"
-          >
-            <div className="team-image-container">
-              <img src={member.emblems} alt="team emblems" className="team-emblems" />
-              <img src={member.image} alt={member.name} className="team-image default" />
-              <img src={member.hoverImage} alt={member.name} className="team-image hover" />
-            </div>
-            <div className="team-info">
-              <h3>{member.name}</h3>
-              <p>{member.role}</p>
-            </div>  
-          </a>
-        ))}
-      </div>
-      <div className="team-grid">
         {outreachMembers.map((member, index) => (
           <a 
             key={index}x
@@ -336,7 +323,28 @@ export default function Team() {
         ))}
       </div>
       <div className="team-grid">
-        {webdevMembers.map((member, index) => (
+        {logMembers.map((member, index) => (
+          <a 
+            key={index}x
+            href={member.linkedin} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="team-card"
+          >
+            <div className="team-image-container">
+              <img src={member.emblems} alt="team emblems" className="team-emblems" />
+              <img src={member.image} alt={member.name} className="team-image default" />
+              <img src={member.hoverImage} alt={member.name} className="team-image hover" />
+            </div>
+            <div className="team-info">
+              <h3>{member.name}</h3>
+              <p>{member.role}</p>
+            </div>  
+          </a>
+        ))}
+      </div>
+      <div className="team-grid">
+        {commsMembers.map((member, index) => (
           <a 
             key={index}x
             href={member.linkedin} 
