@@ -1,0 +1,34 @@
+/* GLOBAL RESET */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+:root { --nav-h: 64px; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+html, body, #root {
+  background: transparent !important;
+  color: inherit;
+}
+
+#root {
+  max-width: none !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+html { scroll-behavior: smooth; }
+
+
+@font-face {
+  font-family: "fellEnglish";
+  src: url("./assets/font/IMFellEnglish-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
