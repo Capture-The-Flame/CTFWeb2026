@@ -1,0 +1,67 @@
+.sponsors-root {
+  position: relative;
+  width: 100%;
+}
+
+.banner-safezone {
+  position: relative;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  overflow: visible;
+}
+
+.banner-row {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+
+  margin-left: 6rem;
+}
+
+.banner {
+  position: relative;
+  width: 140px;
+  flex-shrink: 0;
+}
+
+.banner--0 {
+  transform: rotate(-1.5deg);
+}
+
+.banner--1 {
+  transform: rotate(1deg) translateY(4px);
+}
+
+.banner--2 {
+  transform: rotate(-0.75deg) translateY(2px);
+}
+
+.banner--featured {
+  width: 180px;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 400 / 369.44444444444446;
+}
+
+/* placeholder for banner icons */
+.banner-label {
+  position: absolute;
+  inset: 0;
+
+  display: grid;
+  place-items: center;
+
+  font-family: "fellEnglish", monospace;
+  font-size: 0.9rem;
+  letter-spacing: 0.12rem;
+  color: #ffffff;
+
+  text-align: center;
+  padding: 0.75rem 1rem;
+  pointer-events: none;
+}

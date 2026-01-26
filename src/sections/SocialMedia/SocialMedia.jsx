@@ -1,5 +1,5 @@
 import "./SocialMedia.css";
-import { FaInstagram} from "react-icons/fa6";
+import { FaInstagram, FaLinkedin, FaDiscord} from "react-icons/fa6";
 
 export default function SocialMedia() {
   return (
@@ -13,7 +13,18 @@ export default function SocialMedia() {
             <span>Instagram</span>
           </a>
         </li>
-        add linkedin, discord server
+        <li>
+          <a href="https://www.linkedin.com/company/wicysuic" target="_blank">
+            <FaLinkedin />
+            <span>Linkedin</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://discord.gg/3bR8XUnzp5" target="_blank">
+            <FaDiscord />
+            <span>Discord</span>
+          </a>
+        </li>
       </ul>
     </section>
   );
