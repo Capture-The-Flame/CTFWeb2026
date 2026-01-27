@@ -4,18 +4,21 @@ html, body, #root {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
+  background: #463c5d;
 }
 
 #root {
   display: block;
+  background: #463c5d;
 }
 
 .home {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
   scroll-padding-top: var(--nav-h, 90px);
+  background: #463c5d;
 }
 
 .slide {
@@ -24,12 +27,34 @@ html, body, #root {
   line-height: 0;
   overflow: hidden;
   scroll-margin-top: var(--nav-h, 90px);
+  /* margin-top: -1px;  problem for later. but on mobile specifically there are thing white lies that appear..................... UGHGHGHGHGH */
+}
+
+.slide--home {
+  position: relative;
+  overflow: visible;
+}
+
+.slide--home::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -12vw;
+  width: 100%;
+  height: 26vw;
+  z-index: 9999;
+  pointer-events: none;
+
+  background: var(--transition-img) center / cover no-repeat;
+  transform: scaleX(1.01);
+  /* background: red; */
 }
 
 .slide-art {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .anchor {
@@ -70,6 +95,7 @@ html, body, #root {
 .overlay-card > * {
   width: 100% !important;
   max-width: 100% !important;
+  height: 100%;
 }
 
 .overlay-card * {
@@ -78,7 +104,7 @@ html, body, #root {
 
 .cloud-btn {
   position: absolute;
-  top: clamp(70px, 18vh, 190px);
+  top: clamp(70px, 18vh, 110px);
   z-index: 3;
   
   background: none;
@@ -90,7 +116,7 @@ html, body, #root {
 }
 
 .cloud-btn img {
-  width: clamp(120px, 18vw, 260px);
+  width: clamp(110px, 18vw, 260px);
   height: auto;
   display: block;
 }
@@ -119,9 +145,31 @@ html, body, #root {
   pointer-events: none;
 }
 
+footer {
+  background: linear-gradient(to bottom, #463c5d, black);
+  /* background-color: black; */
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* margin-top: auto; */
+  /* padding: 15px; */
+  margin-top: -1px;
+  border: 0;
+}
+
+footer > h1 {
+  color: white;
+  font-size: 1rem;
+  font-family: "fellEnglish";
+  align-self: center;
+}
+
 @media (max-width: 768px) {
   .overlay { padding-top: 3.5rem; }
   .overlay-card { width: min(560px, 92vw); }
+  .cloud-btn { top: clamp(30px, 35px, 30px); }
+  .cloud-btn img { width: clamp(100px, 70px, 110px); }
+  .cloud-label { font-size: clamp(0.8rem, 2.2vw, 2rem); }
 }
-
-
