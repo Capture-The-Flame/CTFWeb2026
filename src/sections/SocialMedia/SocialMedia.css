@@ -1,22 +1,80 @@
 .socials {
-  background: transparent;
-  color: #fff;
-  padding: 3rem 1rem;
+  padding: clamp(2rem, 6vw, 4rem) 1rem;
   text-align: center;
 }
 
 .socials h3 {
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-family: "fellingEnglish", monospace;
+  letter-spacing: 0.15rem;
 }
 
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
+  gap: clamp(1rem, 3vw, 2.5rem);
   list-style: none;
   padding: 0;
+}
+
+.social-links li:nth-child(1) {
+  transform: rotate(-2deg);
+}
+
+.social-links li:nth-child(2) {
+  transform: rotate(1.5deg);
+}
+
+.social-links li:nth-child(3) {
+  transform: rotate(-1deg);
+}
+
+.social-gem {
+  position: relative;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  color: #fff;
+
+  width: clamp(110px, 16vw, 150px);
+  aspect-ratio: 1 / 1;
+
+  transition: transform 0.25s ease;
+}
+
+.social-gem svg,
+.social-gem span {
+  transform: translateX(45%);
+}
+
+.gem-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+  z-index: 0;
+  pointer-events: none;
+}
+
+.social-gem svg {
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  z-index: 1;
+}
+
+.social-gem span {
+  margin-top: 0.35rem;
+  font-family: "fellEnglish", monospace;
+  font-size: clamp(0.7rem, 1vw, 0.9rem);
+  letter-spacing: 0.12rem;
+
+  z-index: 1;
+}
+
+.social-gem:hover {
+  transform: translateY(-6px) scale(1.15);
 }
 
 .social-links a {
@@ -34,7 +92,7 @@
 
 .social-links a:hover {
   opacity: 1;
-  transform; translateY(-2px);
+  transform: translateY(-2px);
 }
 
 .social-links svg {

@@ -1,5 +1,5 @@
 import "./Sponsors.css";
-import banner from "../../assets/backgroundArt/ctf_banner_00.svg";
+import banner from "../../assets/pieces/ctf_banner_00.svg";
 
 const sponsors = [
   { id: 1, name: "Sponsor 1" },
