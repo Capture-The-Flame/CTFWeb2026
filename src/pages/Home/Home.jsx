@@ -8,6 +8,7 @@ import stoneTransition from "../../assets/backgroundArt/CTF_Stone2.svg";
 import stone from "../../assets/backgroundArt/CTF_Stone3.svg";
 import dragon from "../../assets/backgroundArt/dragon_lair.svg";
 import cloud from "../../assets/pieces/ctf_cloud.svg";
+import scroll from "../../assets/pieces/scroll.svg";
 
 
 import About from "../../sections/About/About.jsx";
@@ -21,7 +22,7 @@ export default function Home() {
     return (
         <div className="home">
 
-            <section id="home" className="slide slide--home">
+            <section id="home" className="slide slide--home" style={{ "--transition-img": `url(${scroll})` }}>
                 <img src={home} alt="chicago skyline" className="slide-art"/>
                 
                 <a 
@@ -45,7 +46,11 @@ export default function Home() {
 
             {/* About Anchor */}
             <div id="about" className="anchor anchor--seam">
-                <About />
+                <div className="overlay overlay--about">
+                    <div className="overlay-card">
+                        <About />
+                    </div>
+                </div>
             </div>
 
             <section id="schedule" className="slide slide--begPath">
@@ -106,6 +111,10 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+            
+            <footer className="footer">
+                <h1> University of Illinois Capture the Flag</h1>
+            </footer>
         </div>
     )
 }
