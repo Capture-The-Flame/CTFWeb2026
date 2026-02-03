@@ -8,7 +8,7 @@
     margin-bottom: 0px;
     font-size: xx-large;
     color: #000000;
-    background-image: url('../../src/assets/pieces/nameplate7.svg');
+    background-image: url('../../src/assets/pieces/nameplate7_opage_3.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center 0px;
@@ -85,7 +85,7 @@
 .team-info {
     color: #000000;
     position: relative;
-    background-image: url('../../src/assets/pieces/nameplate6.svg');
+    background-image: url('../../src/assets/pieces/nameplate6_opage_3.svg');
     background-size: contain; 
     background-position: center;
     background-repeat: no-repeat;
