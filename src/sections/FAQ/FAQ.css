@@ -1,0 +1,170 @@
+/* small board */
+.board-container {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+
+.board-small {
+  width: 700px;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+/* change this later for mobile devices
+   need to get transparent board first for another animation to look natural    
+*/
+.board-small:hover {
+  transform: scale(1.04);
+}
+
+/* popup */
+.faq-popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* big board */
+.board-frame {
+  width: min(95vw, 1400px);
+  aspect-ratio: 16 / 9; /* keep board size consistent */
+}
+
+.board-relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.board-big {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* pages */
+.pages {
+  position: absolute;
+  inset: 0;
+}
+
+.page,
+.page-s {
+  position: absolute;
+  width: 16%;
+  cursor: pointer;
+  transform-origin: top center;
+  filter: sepia(10%) brightness(0.95);
+}
+
+.page-s {
+  width: 14%;
+}
+
+.page-image {
+  width: 100%;
+  display: block;
+  transition: transform 0.15s ease;
+}
+
+.page:hover .page-image {
+  transform: translateY(-3px);
+}
+
+/* page popup */
+.page-popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.page-popup-content {
+  animation: zoomIn 0.2s ease-out;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.page-popup-page {
+  position: relative;
+  width: min(90vw, 700px);
+}
+
+.page-popup-image {
+  width: 100%;
+  display: block;
+}
+
+/* page popup text */
+.page-popup-text {
+  position: absolute;
+  top: 20%;
+  left: 12%;
+  right: 12%;
+  font-family: "fellEnglish", serif;
+  font-size: clamp(16px, 2vw, 20px);
+  color: #1e140c;
+  text-align: center;
+  pointer-events: none;
+}
+
+.page-popup-text p {
+  margin-top: 12px;
+}
+
+/* SMALL BOARD FRAME */
+.board-small-frame {
+  width: 700px;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.board-small-frame:hover {
+  transform: scale(1.04);
+}
+
+.board-small {
+  width: 100%;
+  display: block;
+}
+
+/* small board pages */
+.page-small {
+  position: absolute;
+  width: 20%;
+  transform-origin: top center;
+  filter: sepia(10%) brightness(0.95);
+}
+
+/* Rotating */
+
+/* Small */
+#one-s   { transform: rotate(0deg); }
+#two-s  { transform: rotate(0deg); }
+#three-s   { transform: rotate(90deg); }
+#four-s   { transform: rotate(-10deg);}
+
+/* Big */
+#one-b { transform: rotate(-2deg); }
+#two-b { transform: rotate(1.5deg); }
+#three-b { transform: rotate(-1deg); }
+#four-b { transform: rotate(2.5deg); }
+#five-b { transform: rotate(-1.5deg); }
+#six-b { transform: rotate(1deg); }
