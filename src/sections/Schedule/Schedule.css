@@ -10,12 +10,13 @@
   background: transparent;
   border: none;
   overflow: visible; 
+  z-index: 11;
 }
 
 .char-btn {
   /* positioning */
   position: absolute;
-  /* transform: translate(-50%, -50%);  */
+  transform: translate(-50%, -50%); 
   
   /* button style */
   background: none;
