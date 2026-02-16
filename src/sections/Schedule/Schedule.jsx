@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import "./Schedule.css";
 import char1 from "../../assets/scheduleArt/character_01.svg";
@@ -70,3 +71,8 @@ export default function Schedule() {
     </div>
   );
 }
+=======
+export default function Schedule() {
+  return;
+}
+>>>>>>> main
