@@ -12,7 +12,7 @@ const scheduleCharacters = [ //properties for each character
     src: char1, 
     top: "43%", 
     left: "35%", 
-    width: "40%", 
+    width: "100%", 
     rotate: "90deg" //pics in file are rotated so had to adjust
   },
   { 
@@ -35,9 +35,9 @@ const scheduleCharacters = [ //properties for each character
     id: 4, 
     label: "character four", 
     src: char4, 
-    top: "34%", 
+    top: "2%", 
     left: "10%", 
-    width: "30%", 
+    width: "50%", 
     rotate: "90deg" //pics in file are rotated so had to adjust
   },
 ];
