@@ -1,51 +1,53 @@
 .socials {
-  padding: clamp(2rem, 6vw, 4rem) 1rem;
-  text-align: center;
+  position: absolute;
+  left: 2rem;
+  bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  bottom: 1.5rem;
 }
 
-.socials h3 {
-  margin-bottom: 2rem;
+,socials h3 {
+  margin: 0 0 0.5rem 0;
   font-size: clamp(1.2rem, 2vw, 1.6rem);
-  font-family: "fellingEnglish", monospace;
+  font-family: "fellEnglish", monospace;
   letter-spacing: 0.15rem;
 }
 
 .social-links {
-  display: flex;
-  justify-content: center;
-  gap: clamp(1rem, 3vw, 2.5rem);
   list-style: none;
+  margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.social-links li:nth-child(1) {
-  transform: rotate(-2deg);
+.social-row {
+  display: flex;
+  gap: 0.5rem;
 }
 
-.social-links li:nth-child(2) {
-  transform: rotate(1.5deg);
+.social-row.top {
+  justify-content: flex-start; /* single gem */
 }
 
-.social-links li:nth-child(3) {
-  transform: rotate(-1deg);
+.social-row.bottom {
+  justify-content: flex-start; /* two gems side by side */
 }
 
+/* Gems */
 .social-gem {
   position: relative;
-  display: grid;
-  place-items: center;
-  text-decoration: none;
-  color: #fff;
-
-  width: clamp(110px, 16vw, 150px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(80px, 10vw, 100px);
   aspect-ratio: 1 / 1;
-
-  transition: transform 0.25s ease;
-}
-
-.social-gem svg,
-.social-gem span {
-  transform: translateX(45%);
+  text-decoration: none;
+  color: inherit;
 }
 
 .gem-bg {
@@ -54,47 +56,17 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-
   z-index: 0;
   pointer-events: none;
 }
 
 .social-gem svg {
-  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
   z-index: 1;
-}
-
-.social-gem span {
-  margin-top: 0.35rem;
-  font-family: "fellEnglish", monospace;
-  font-size: clamp(0.7rem, 1vw, 0.9rem);
-  letter-spacing: 0.12rem;
-
-  z-index: 1;
+  color: #ffffff;
 }
 
 .social-gem:hover {
-  transform: translateY(-6px) scale(1.15);
-}
-
-.social-links a {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-
-  color: inherit;
-  text-decoration: none;
-  font-size: 1.1rem;
-
-  opacity: 0.85;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-.social-links a:hover {
-  opacity: 1;
-  transform: translateY(-2px);
-}
-
-.social-links svg {
-  font-size: 1.5rem;
+  transform: translateY(-6px) scale(1.1);
+  transition: transform 0.2s ease;
 }
