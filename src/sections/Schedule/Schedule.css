@@ -3,14 +3,12 @@
 .schedule-scene {
   position: relative;
   width: 100%;
-  
-  
-  height: 600px; 
+  height: 1000px; 
   /* adjust to path height */
   background: transparent;
   border: none;
   overflow: visible; 
-  z-index: 11;
+  z-index: 99
 }
 
 .char-btn {
@@ -27,43 +25,44 @@
   /* boundary size of character images */
   width: 20%;
   min-width: 10px;
-  max-width: 180px;
+  max-width: 800px;
 
   height: auto;
+  z-index: 3;
   
   transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
 }
 
 .char-btn:hover {
   transform: translate(-50%, -50%) scale(1.15) translateY(-10px);
-  z-index: 100; 
+  z-index: 3; 
 }
 
 .char-img {
   width: 100%;
   height: auto;
   display: block;
-  
-  filter: drop-shadow(0 5px 5px rgba(0,0,0,0.4));
+  z-index: 3;
 }
 
 .char-label {
   /* text on hover */
-  opacity: 0;
+  opacity: 1;
   pointer-events: none;
   
   position: absolute;
   bottom: 100%; /* floats above head */
   left: 50%;
   transform: translateX(-50%);
+  z-index: 2;
   
   font-family: "fellEnglish", serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #fff;
   text-shadow: 0 2px 4px #000;
   white-space: nowrap;
   
-  transition: opacity 0.2s ease;
+  transition: opacity 0.6s ease;
 }
 
 .char-btn:hover .char-label {
@@ -77,4 +76,121 @@
     aspect-ratio: 16 / 9; 
     min-height: 300px;    /* safety net */
   }
+}
+
+
+/* EVERYTHING BELOW THIS COMMENT IS FOR THE TABLET POPUP, NOT THE SCHEDULE SCENE WITH ITS CHARACTERS*/
+
+/* modal overlay that dims background when a character is clicked */
+.modal-overlay {
+  /* locks the dark background to the browser window */
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75); /* black with 75% opacity */
+  z-index: 9999; /* sits on top of everything */
+  
+  /* centers tablet */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  animation: fadeIn 0.2s ease-out;
+}
+
+.modal-content {
+  position: relative; 
+  width: 90%;
+  max-width: 600px; 
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* for the image */
+.modal-bg-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  /* optional drop shadow */
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5)); 
+}
+
+/* text on tablet */
+.modal-text-container {
+  position: absolute; 
+  
+  /* positioning the text, adjust as need please! */
+  top: 15%;   
+  left: 15%;
+  right: 15%;
+  bottom: 20%;
+  
+  /* text styling */
+  color: #000000; 
+  font-family: "fellEnglish", serif;
+  text-align: center;
+  
+  /* scrolling withing the tablet maybe???? */
+  overflow-y: auto; 
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-text-container h2 {
+  text-align: center;
+  margin-bottom: 20px; /* stops overlap between text in the box */
+}
+
+.modal-text-container ul {
+  padding: 0;
+  margin: 0;
+  text-align: center; 
+  list-style-position: inside; 
+}
+
+.modal-text-container li {
+  margin-bottom: 12px; 
+  line-height: 1.2;    /* gives the text some breathing room */
+  font-size: 1.2rem;   
+}
+
+/* close button */
+.modal-close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #ff4d4d;
+  color: white;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 9999; 
+  transition: transform 0.2s ease;
+}
+
+.modal-close:hover {
+  transform: scale(1.1);
+}
+
+/* subtle animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes popIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
