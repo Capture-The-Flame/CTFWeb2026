@@ -88,9 +88,13 @@
   pointer-events: none;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 768px) {
+  .banner,
   .banner--featured {
-    flex: 1.15 1 0;
     transform: none;
+  }
+
+  .banner-row {
+    align-items: center;
   }
 }

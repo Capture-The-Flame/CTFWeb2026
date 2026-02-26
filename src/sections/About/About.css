@@ -16,17 +16,17 @@
 
 /* Title */
 .about-title {
-  font-size: clamp(2rem, 4vw, 3rem);
-  margin-bottom: 0;
-  letter-spacing: 0;
+  font-size: clamp(1.1rem, 5vw, 2rem);
+  margin: 1rem 0 -0.5rem 0;
+  line-height: 0.5;
 }
 
 /* Paragraphs */
 .about p {
   max-width: 700px;
-  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
   line-height: 1.6;
-  margin-bottom: 7rem;
+  margin-bottom: 3rem;
 }
 
 /* Mobile */

@@ -1,8 +1,7 @@
 .socials {
-  position: absolute;
-  top: 4rem;
-  left: 1rem;
-  transform: translate(-1rem, 12rem);
+  position: relative;
+  margin-top: 4rem;
+  margin-left: -4rem;
 
   display: flex;
   flex-direction: column;
