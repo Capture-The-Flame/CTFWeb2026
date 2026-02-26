@@ -4,13 +4,13 @@
 }
 
 .garland {
-  width: 100vw;              /* full page width */
+  width: 100%;              /* full page width */
   overflow: hidden;
   margin-bottom: 1rem;
 }
 
 .garland img {
-  width: 150%;               /* stretch beyond container to fill */
+  width: 100%;               /* stretch beyond container to fill */
   max-width: none;
   display: block;
   object-fit: cover;
@@ -33,24 +33,18 @@
 
   gap: clamp(0.75rem, 1.5vw, 1.25rem);
 
-  padding-inline: 2rem;
-  max-width: 100%;
+  width: 100%;
 }
 
 .banner {
   position: relative;
-  flex: 1 1 0;
-
-  max-width: clamp(60px, 8vw, 95px);
-
+  width: clamp(120px, 30vw, 220px);
   transform-origin: bottom center;
-
-  transform: scale(0.5);
 }
 
 /* Left-side Banners */
 .banner---1 {
-  transform: translateY(6px) rotate(-1.5deg) scale(0.65);
+  transform: translateY(6px) rotate(-1.5deg);
 }
 
 .banner--0 {
@@ -59,13 +53,13 @@
 
 /* Right-side Banners */
 .banner--1 {
-  transform: translateY(6px) rotate(1.5deg) scale(0.65);
+  transform: translateY(6px) rotate(1.5deg);
 }
 
 .banner--featured {
-  width: clamp(80px, 11vw, 130px);
+  width: clamp(120px, 30vw, 220px);
 
-  transform: translateY(-10px) scale(0.75);
+  transform: translateY(-10px);
   z-index: 2;
 }
 

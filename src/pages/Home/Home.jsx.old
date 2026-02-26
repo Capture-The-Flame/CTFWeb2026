@@ -77,7 +77,7 @@ export default function Home() {
                 <img src={endPath} alt="end path" className="slide-art"/>
 
                 <div className="overlay overlay--sponsors">
-                    <div className="overlay-card overlay-card--full">          
+                    <div className="overlay-card">
                         <Sponsors />
                     </div>
                 </div>
