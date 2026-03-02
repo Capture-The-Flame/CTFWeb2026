@@ -2,10 +2,14 @@ import "./Sponsors.css";
 import banner from "../../assets/pieces/beige_banner.svg";
 import garland from "../../assets/pieces/sponsors_banner.svg";
 
+import comptiaLogo from "../../assets/pieces/comptia_logo.png";
+import zebraLogo from "../../assets/pieces/zebra_logo.png";
+import sansLogo from "../../assets/pieces/SANS.png";
+
 const sponsors = [
-  { id: 1, name: "Comptia" },
-  { id: 2, name: "Zebra" },
-  { id: 3, name: "SANS" },
+  { id: 1, name: "Comptia", logo: comptiaLogo, scaleX: 0.45, scaleY: 0.6 },
+  { id: 2, name: "Zebra", logo: zebraLogo, scaleX: 0.6, scaleY: 0.6 },
+  { id: 3, name: "SANS", logo: sansLogo, scaleX: 0.55, scaleY: 0.45 },
 ];
 
 export default function Sponsors() {
@@ -31,7 +35,16 @@ export default function Sponsors() {
               `}
             >
               <img src={banner} alt={`${sponsor.name} banner`} />
-              <span className="banner-label">{sponsor.name}</span>
+
+              <div className="banner-logo">
+                <img 
+                  src={sponsor.logo}
+                  alt={`${sponsor.name} logo`}
+                  style={{
+                    transform: `scale(${sponsor.scaleX || 0.7}, ${sponsor.scaleY || 0.7})`,
+                  }}
+                />
+              </div>
             </div>
           ))}
         </div>

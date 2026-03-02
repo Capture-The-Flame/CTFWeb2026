@@ -71,30 +71,34 @@
 }
 
 /* placeholder for banner icons */
-.banner-label {
+.banner-logo {
   position: absolute;
   inset: 0;
 
   display: grid;
   place-items: center;
 
-  font-family: "fellEnglish", monospace;
-  font-size: clamp(0.75rem, 1vw, 0.9rem);
-  letter-spacing: 0.12rem;
-  color: #ffffff;
-
-  text-align: center;
-  padding: 0.75rem 1rem;
+  padding: 1.25rem;
   pointer-events: none;
 }
 
+.banner-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
 @media (max-width: 768px) {
-  .banner,
-  .banner--featured {
-    transform: none;
+  .banner-safezone {
+    align-items: flext-start;
+    padding-bottom: 1rem;
   }
 
   .banner-row {
-    align-items: center;
+    gap: 1rem;
+  }
+
+  .banner img {
+    aspect-ratio: auto;
   }
 }
