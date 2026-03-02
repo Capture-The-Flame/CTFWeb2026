@@ -3,23 +3,9 @@
   width: 100%;
 }
 
-.garland {
-  width: 100%;              /* full page width */
-  overflow: hidden;
-  margin-bottom: 1rem;
-}
-
-.garland img {
-  width: 100%;               /* stretch beyond container to fill */
-  max-width: none;
-  display: block;
-  object-fit: cover;
-  height: auto;              /* optional: auto height */
-}
-
 .banner-safezone {
   position: relative;
-  padding-top: 1rem;
+  padding-top: 4rem;
   padding-bottom: 2rem;
   display: flex;
   align-items: flex-end;
@@ -91,6 +77,7 @@
 @media (max-width: 768px) {
   .banner-safezone {
     align-items: flext-start;
+    padding-top: 3rem;
     padding-bottom: 1rem;
   }
 

@@ -1,6 +1,5 @@
 import "./Sponsors.css";
 import banner from "../../assets/pieces/beige_banner.svg";
-import garland from "../../assets/pieces/sponsors_banner.svg";
 
 import comptiaLogo from "../../assets/pieces/comptia_logo.png";
 import zebraLogo from "../../assets/pieces/zebra_logo.png";
@@ -17,12 +16,6 @@ export default function Sponsors() {
 
   return (
     <div className="sponsors-root">
-      
-      {/* Flag Garland */}
-      <div className="garland">
-        <img src={garland} alt="Sponsors flag garland" />
-      </div>
-
       {/* Sponsor Banners */}
       <div className="banner-safezone">
         <div className="banner-row">

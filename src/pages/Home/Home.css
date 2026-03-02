@@ -114,6 +114,22 @@ html, body, #root {
   inset: 0;
 }
 
+.bunting {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  overflow: visible;
+  z-index: 2;
+}
+
+.bunting img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 .cloud-btn {
   position: absolute;
   top: clamp(70px, 18vh, 110px);
@@ -181,9 +197,12 @@ footer > h1 {
 @media (max-width: 768px) {
   .overlay { padding-top: 3.5rem; }
   .overlay-card { width: min(560px, 92vw); }
+  .overlay--sponsors { padding: 2rem 1rem 1rem; }
   .cloud-btn { top: clamp(30px, 35px, 30px); }
   .cloud-btn img { width: clamp(100px, 70px, 110px); }
   .cloud-label { font-size: clamp(0.8rem, 2.2vw, 2rem); }
+  .slide--endPath {
+    overflow: visible;
+  }
 }
-
 

@@ -9,6 +9,8 @@ import stone from "../../assets/backgroundArt/CTF_Stone3.svg";
 import dragon from "../../assets/backgroundArt/dragon_lair.svg";
 import cloud from "../../assets/pieces/ctf_cloud.svg";
 import scroll from "../../assets/pieces/scroll.svg";
+import bunting from "../../assets/pieces/sponsors_banner.svg";
+
 
 
 import About from "../../sections/About/About.jsx";
@@ -77,9 +79,15 @@ export default function Home() {
                 <img src={endPath} alt="end path" className="slide-art"/>
 
                 <div className="overlay overlay--sponsors">
+
+                    <div className="bunting">
+                      <img src={bunting} alt="Sponsors Pennant Bunting" />
+                    </div>
+
                     <div className="overlay-card overlay-card--full">          
                         <Sponsors />
                     </div>
+
                 </div>
             </section>
 
