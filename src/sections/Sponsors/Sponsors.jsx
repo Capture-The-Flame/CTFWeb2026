@@ -1,5 +1,5 @@
 import "./Sponsors.css";
-import banner from "../../assets/pieces/ctf_banner_00.svg";
+import banner from "../../assets/pieces/beige_banner.svg";
 import garland from "../../assets/pieces/sponsors_banner.svg";
 
 const sponsors = [
