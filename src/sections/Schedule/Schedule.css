@@ -14,7 +14,9 @@
 .char-btn {
   /* positioning */
   position: absolute;
-  transform: translate(-50%, -50%); 
+  top: var(--desktop-top);  
+  left: var(--desktop-left);
+  transform: translate(-50%, -50%);
   
   /* button style */
   background: none;
@@ -121,48 +123,113 @@
   filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5)); 
 }
 
-/* text on tablet */
 .modal-text-container {
   position: absolute; 
   
   /* positioning the text, adjust as need please! */
-  top: 15%;   
-  left: 15%;
-  right: 15%;
-  bottom: 20%;
+  top: 14%;   
+  left: 16%;
+  right: 16%;
+  bottom: 18%;
   
   /* text styling */
   color: #000000; 
-  font-family: "fellEnglish", serif;
-  text-align: center;
+  font-family: "tiny5", serif;
   
   /* scrolling withing the tablet maybe???? */
   overflow-y: auto; 
 
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-.modal-text-container h2 {
+.modal-text-container h1 {
   text-align: center;
+  margin-top: 0;
   margin-bottom: 20px; /* stops overlap between text in the box */
+  line-height: 1;
 }
 
-.modal-text-container ul {
-  padding: 0;
-  margin: 0;
-  text-align: center; 
-  list-style-position: inside; 
+.schedule-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-.modal-text-container li {
-  margin-bottom: 12px; 
-  line-height: 1.2;    /* gives the text some breathing room */
-  font-size: 1.2rem;   
+.schedule-block {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1); 
+  margin-bottom: 10px;
 }
 
-/* close button */
+.schedule-item {
+  display: flex;
+  justify-content: space-between;
+  
+  /* 1. Change from 'center' to 'flex-start' */
+  /* This anchors everything to the top, so long text expands cleanly downward */
+  align-items: flex-start; 
+  
+  /* 2. Add a gap */
+  /* This creates an unbreakable invisible wall between your columns */
+  gap: 15px; 
+  
+  padding: 12px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 1.1rem;
+}
+
+.schedule-item:hover,
+.schedule-item.active {
+  background-color: rgba(0, 0, 0, 0.05); 
+  border-radius: 5px;
+}
+
+.schedule-item .time {
+  width: 35%; 
+  text-align: left;
+  
+  line-height: 1.2;         
+  overflow-wrap: break-word; 
+}
+
+.schedule-item .event {
+  width: 55%;
+  text-align: left;
+  line-height: 1.3;
+  overflow-wrap: break-word;
+}
+
+.schedule-item .caret { 
+  width: auto;
+  min-width: 15px; 
+  text-align: right;
+  font-size: 0.9rem;
+  color: #555;
+  
+  margin-top: 10px; 
+}
+
+.details {
+  background-color: rgba(0, 0, 0, 0.03);
+  padding: 15px;
+  border-radius: 0 0 5px 5px;
+  margin-top: -5px; 
+  margin-bottom: 5px;
+  animation: slideDown 0.2s ease-out;
+}
+
+.details p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.details p:last-child {
+  margin-bottom: 0;
+}
+
 .modal-close {
   position: absolute;
   top: -10px;
@@ -184,7 +251,6 @@
   transform: scale(1.1);
 }
 
-/* subtle animation */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -193,4 +259,31 @@
 @keyframes popIn {
   from { transform: scale(0.8); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* mobile tablet text */
+@media (max-width: 768px) {
+  .schedule-item .event {
+    text-align: center; /* centers the event name on phones */
+  }
+  .schedule-item .time{
+    text-align: left; /* centers the time on phones */
+  }
+  .modal-text-container {
+    position: absolute; 
+
+    top: 16%;   
+    left: 12%;
+    right: 14%;
+    bottom: 18%;
+  }
+  .char-btn {
+    top: var(--mobile-top);
+    left: var(--mobile-left);
+  }
 }
