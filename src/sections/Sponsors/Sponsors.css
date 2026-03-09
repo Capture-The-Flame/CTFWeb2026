@@ -78,7 +78,7 @@
 
 @media (max-width: 768px) {
   .banner-safezone {
-    align-items: flext-start;
+    align-items: flex-start;
     padding-top: 3rem;
     padding-bottom: 1rem;
   }

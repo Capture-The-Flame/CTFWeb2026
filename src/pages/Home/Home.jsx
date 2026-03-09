@@ -49,7 +49,7 @@ export default function Home() {
             {/* About Anchor */}
             <div id="about" className="anchor anchor--seam">
                 <div className="overlay overlay--about">
-                    <div className="overlay-card">
+                    <div className="overlay-card overlay-card--full">
                         <About />
                     </div>
                 </div>
