@@ -5,11 +5,13 @@
 
 .banner-safezone {
   position: relative;
-  padding-top: 4rem;
+  padding-top: 10rem;
   padding-bottom: 2rem;
   display: flex;
   align-items: flex-end;
   overflow: visible;
+
+  z-index: 1;
 }
 
 .banner-row {
@@ -45,8 +47,8 @@
 .banner--featured {
   width: clamp(120px, 30vw, 220px);
 
-  transform: translateY(-10px);
-  z-index: 2;
+  transform: translateY(-5px);
+  /*z-index: 2;*/
 }
 
 .banner img {
