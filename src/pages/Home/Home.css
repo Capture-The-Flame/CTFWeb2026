@@ -175,26 +175,32 @@ footer > h1 {
 }
 
 
+@media (min-width: 1350px) {
+  .hide-abv-1350px {
+      display: none;
+  }
+}
+
 @media (min-width: 1000px) {
   .hide-abv-1000px {
       display: none;
   }
 }
 
-@media (min-width: 900px) {
-  .hide-abv-900px {
+@media (min-width: 840px) {
+  .hide-abv-840px {
       display: none;
   }
 }
 
-@media (min-width: 850px) {
-  .hide-abv-850px {
+@media (min-width: 804px) {
+  .hide-abv-804px {
       display: none;
   }
 }
 
-@media (min-width: 800px) {
-  .hide-abv-800px {
+@media (min-width: 750px) {
+  .hide-abv-750px {
       display: none;
   }
 }

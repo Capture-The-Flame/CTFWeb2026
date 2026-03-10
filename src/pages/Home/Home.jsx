@@ -92,7 +92,7 @@ export default function Home() {
             </section>
 
             <section id="team" className="slide slide--stone">
-                <img src={stone} alt="stone" className="slide-art"/>
+            
                 <img src={stone} alt="stone" className="slide-art"/>
                 <img src={stone} alt="stone" className="slide-art"/>
                 <img src={stone} alt="stone" className="slide-art hide-abv-450px"/>
@@ -102,12 +102,13 @@ export default function Home() {
                 <img src={stone} alt="stone" className="slide-art hide-abv-600px"/>
                 <img src={stone} alt="stone" className="slide-art hide-abv-600px"/>
                 <img src={stone} alt="stone" className="slide-art hide-abv-650px"/>
-                <img src={stone} alt="stone" className="slide-art hide-abv-800px"/>
-                <img src={stone} alt="stone" className="slide-art hide-abv-800px"/>
-                <img src={stone} alt="stone" className="slide-art hide-abv-850px"/>
-                <img src={stone} alt="stone" className="slide-art hide-abv-900px"/>
+                <img src={stone} alt="stone" className="slide-art hide-abv-750px"/>
+                <img src={stone} alt="stone" className="slide-art hide-abv-804px"/>
+                <img src={stone} alt="stone" className="slide-art hide-abv-804px"/>
+                <img src={stone} alt="stone" className="slide-art hide-abv-840px"/>
                 <img src={stone} alt="stone" className="slide-art hide-abv-1000px"/>
-
+                <img src={stone} alt="stone" className="slide-art hide-abv-1350px"/>
+                
                 <div className="overlay overlay--team">
                     <div className="overlay-card">
                         <Team />
