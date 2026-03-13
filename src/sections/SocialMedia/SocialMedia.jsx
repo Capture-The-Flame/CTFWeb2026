@@ -2,12 +2,18 @@ import "./SocialMedia.css";
 import { FaInstagram, FaLinkedin, FaDiscord} from "react-icons/fa6";
 
 import gem1 from "../../assets/pieces/gem1.svg";
-import gem2 from "../../assets/pieces/gem2.svg";
+//import gem2 from "../../assets/pieces/gem2.svg";
 
 export default function SocialMedia() {
   return (
+
     <section className="socials">
-      <h3>Follow Us</h3>
+      {/*
+      <div className="follow-gem">
+        <img src={gem2} alt="" className="gem-bg" />
+        <span className="follow-text">Follow Us</span>
+      </div>
+      */}
 
       <ul className="social-links">
         <li className="pos-2">
@@ -25,7 +31,7 @@ export default function SocialMedia() {
               target="_blank"
               rel="noopener noreferrer"
               className="social-gem">
-            <img src={gem2} alt="" className="gem-bg" />
+            <img src={gem1} alt="" className="gem-bg" />
             <FaLinkedin />
           </a>
         </li>

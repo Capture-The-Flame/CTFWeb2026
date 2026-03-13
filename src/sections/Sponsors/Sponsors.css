@@ -5,8 +5,10 @@
 
 .banner-safezone {
   position: relative;
-  padding-top: 10rem;
+
+  padding-top: clamp(6rem, 12vw, 14rem);
   padding-bottom: 2rem;
+  
   display: flex;
   align-items: flex-end;
   overflow: visible;

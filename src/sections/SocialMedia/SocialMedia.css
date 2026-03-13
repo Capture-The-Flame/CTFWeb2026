@@ -6,33 +6,42 @@
   flex-direction: column;
   align-items: flex-start;
 }
+/*
+.follow-gem {
+  position: relative;
+  width: clamp(120px, 15vw, 150px);
+  aspect-ratio: 1 / 1;
 
-.socials h3 {
-  margin: 0 0 0.5rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  font-size: clamp(1.2rem, 2.5vw, 2rem);
-  font-family: "fellEnglish", monospace;
-  letter-spacing: 0.15rem;
-  color: #000000;
+  margin-bottom: 1rem;
 }
 
+.follow-text {
+  position: relative;
+  z-index: 1;
+
+  font-family: "fellEnglish", monospace;
+  font-size: clamp(1rem, 1.6vw, 1.4rem);
+  letter-spacing: 0.15rem;
+
+  color: white;
+  text-align: center;
+}
+*/
 .social-links {
   list-style: none;
   margin: 0;
   padding: 0;
 
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 0.2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 
   justify-items: center;
   align-items: center;
-}
-
-.social-links li:first-child {
-  grid-column: 1 / span 2;
-  display: flex;
-  justify-content: center;
 }
 
 /* Gems */
