@@ -127,7 +127,7 @@
   position: absolute; 
   
   /* positioning the text, adjust as need please! */
-  top: 14%;   
+  top: 18%;   
   left: 16%;
   right: 16%;
   bottom: 18%;
@@ -188,6 +188,7 @@
 .schedule-item .time {
   width: 35%; 
   text-align: left;
+  font-size: 72%;
   
   line-height: 1.2;         
   overflow-wrap: break-word; 
@@ -285,5 +286,8 @@
   .char-btn {
     top: var(--mobile-top);
     left: var(--mobile-left);
+  }
+  .schedule-item .time {
+    font-size: 90%;
   }
 }

@@ -9,7 +9,7 @@ import StoneTablet from "../../assets/scheduleArt/FigmaStoneTablet.svg";
 
 const mainSchedule = [
   {
-    time: "6:30 - 8:00 AM",
+    time: "6:30 A.M. - 8:00 A.M.",
     eventName: "Check in",
     details: [
       "Participants will arrive at the venue with their teams (3 people each!) and proceed with the check-in process.",
@@ -17,7 +17,7 @@ const mainSchedule = [
     ]
   },
   {
-    time: "8:00 - 8:45 AM",
+    time: "8:00 A.M. - 8:45 A.M.",
     eventName: "Welcome/Keynote",
     details: [
       "The event will officially commence with an introduction to the CTF.",
@@ -25,7 +25,7 @@ const mainSchedule = [
     ]
   },
   {
-    time: "9:00 - 9:55 AM",
+    time: "9:00 A.M. - 9:55 A.M.",
     eventName: "Workshop One",
     details: [
       "To help participants prepare for the CTF, we will host two concurrent workshops.",
@@ -33,7 +33,7 @@ const mainSchedule = [
     ]
   },
   {
-    time: "10:00-10:55 AM",
+    time: "10:00 A.M. - 10:55 A.M.",
     eventName: "Workshop Two",
     details: [
       "To help participants prepare for the CTF, we will host two concurrent workshops.",
@@ -41,7 +41,7 @@ const mainSchedule = [
     ]
   },
   {
-    time: "11:00 AM - 6:00 PM",
+    time: "11:00 A.M. - 6:00 P.M.",
     eventName: "Competition",
     details: [
       "The competition begins!",
@@ -52,33 +52,62 @@ const mainSchedule = [
     ]
   },
   {
-    time: "11:30 AM - 1:30 PM",
+    time: "11:30 A.M. - 1:30 P.M.",
     eventName: "Lunch Break",
     details: [
       "All Attendees, including students, mentors, and volunteers, will enjoy lunch.",
       "This time will also give participants an opportunity to network and recharge for the competition ahead."
     ]
   },
+  {
+    time: "6:00 P.M. - 7:00 P.M.",
+    eventName: "Dinner Break",
+    details: [
+      "Dinner will be served during this time!",
+    ]
+  },
+  {
+    time: "6:30 P.M. - 7:30 P.M.",
+    eventName: "Networking Fair",
+    details: [
+      "Attendees will connect with event sponsors and industry professionals during the networking session.",
+      "This is a great opportunity for students to learn about potential internships and job opportunities from partner companies.",
+    ]
+  },
+  {
+    time: "7:30 P.M. - 8:00 P.M.",
+    eventName: "Solutions Workshop",
+    details: [
+      "Review solutions with Experience team and mentors!",
+    ]
+  },
+  {
+    time: "8:00 P.M. - 8:30 P.M.",
+    eventName: "Awards/Closing Ceremony",
+    details: [
+      "The day will conclude with an awards ceremony where winners for both tracks (beginner and advanced) will be announced. A special hidden prize will also be awarded for the team with the highest accuracy in each track.",
+    ]
+  },
 ];
 
 const scheduleCharacters = [ 
-  { id: 1, label: "Schedule", src: char1, 
+  { id: 1, label: "Hey!", src: char1, 
     top: "22%", left: "14%",
     mobileTop: "18%", mobileLeft: "10%",
     width: "10%", flip: true },
-  { id: 2, label: "Schedule", src: char2, 
+  { id: 2, label: "Click on us for the schedule!", src: char2, 
     top: "60%", left: "74%",
     mobileTop: "60%", mobileLeft: "73%",
     width: "11%", },
-  { id: 3, label: "Schedule", src: char3, 
+  { id: 3, label: "", src: char3, 
     top: "55%", left: "-4%",
     mobileTop: "40%", mobileLeft: "26%",
     width: "14%", flip: true },
-  { id: 4, label: "Schedule", src: char4, 
+  { id: 4, label: "Welcome to CTF!", src: char4, 
     top: "37%", left: "50%",
     mobileTop: "25%", mobileLeft: "50%",
     width: "19%", rotate: "90deg" },
-  { id: 5, label: "Schedule", src: char5, 
+  { id: 5, label: "", src: char5, 
     top: "26%", left: "87%",
     mobileTop: "22%", mobileLeft: "76%",
     width: "29%" }
