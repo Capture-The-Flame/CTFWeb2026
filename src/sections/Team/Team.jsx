@@ -1,5 +1,4 @@
 import "./Team.css";
-import vertical_scroll from "../../assets/pieces/vertical_scroll_00_transparent.svg";
 import director_emblems from "../../assets/pieces/ctf_emblems_director.png";
 import comms_emblems from "../../assets/pieces/ctf_emblems_comms.png";
 import exp_emblems from "../../assets/pieces/ctf_emblems_exp.png";
@@ -236,10 +235,10 @@ export default function Team() {
       emblems: outreach_emblems
     },
     { 
-      name: "Lizette Salto",
+      name: "Lisette Castanon",
       role: "Outreach Member",
-      image: "../../src/assets/profilepics/Lizette Salto.png",
-      linkedin: "https://www.linkedin.com/in/lizette-salto-877150256/",
+      image: "../../src/assets/profilepics/Lisette Castanon.jpeg",
+      linkedin: "https://www.linkedin.com/in/lisette-castanon/",
       emblems: outreach_emblems
     },
     { 

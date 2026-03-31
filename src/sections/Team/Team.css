@@ -8,7 +8,7 @@
     margin-bottom: 0px;
     font-size: x-large;
     color: #000000;
-    background-image: url('../../src/assets/pieces/nameplate7_opage_3.svg');
+    background-image: url('../../src/assets/pieces/nameplate.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center 0px;
@@ -94,7 +94,7 @@
 .team-info {
     color: #000000;
     position: relative;
-    background-image: url('../../src/assets/pieces/nameplate6_opage_3.svg');
+    background-image: url('../../src/assets/pieces/nameplate2.svg');
     background-size: contain; 
     background-position: center;
     background-repeat: no-repeat;
@@ -145,12 +145,14 @@
 
 @media (max-width: 1600px) {
     .exp-grid-scroll {
+        padding-left: 40px;
+        padding-right: 50px;
         flex-wrap: nowrap;       
         overflow-x: auto;        
-        justify-content: flex-start;
-        padding-bottom: 8px;     
+        justify-content: flex-start;   
         -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;  
+        scrollbar-width: thin;
+        scroll-behavior: smooth;
     }
   
     .exp-grid-scroll::-webkit-scrollbar {
@@ -163,17 +165,19 @@
   
     .exp-row-scroll {
         overflow: hidden;  
-        -webkit-mask-image: linear-gradient(to right, black 90%, transparent 100%);
-        mask-image: linear-gradient(to right, black 90%, transparent 100%); 
+        -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 85%, transparent 100%);
+        mask-image: linear-gradient(to right, transparent 0%, black 8%,  black 85%, transparent 100%); 
     }
 
     .out-grid-scroll {
+        padding-left: 40px;
+        padding-right: 50px;
         flex-wrap: nowrap;       
         overflow-x: auto;        
         justify-content: flex-start;
-        padding-bottom: 8px;     
         -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;  
+        scrollbar-width: thin;
+        scroll-behavior: smooth;
     }
   
     .out-grid-scroll::-webkit-scrollbar {
@@ -186,8 +190,8 @@
   
     .out-row-scroll {
         overflow: hidden;  
-        -webkit-mask-image: linear-gradient(to right, black 95%, transparent 100%);
-        mask-image: linear-gradient(to right, black 95%, transparent 100%); 
+        -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 85%, transparent 100%);
+        mask-image: linear-gradient(to right, transparent 0%, black 8%, black 85%, transparent 100%); 
     }
     
 }
@@ -208,12 +212,14 @@
     }
 
     .log-grid-scroll {
+        padding-left: 40px;
+        padding-right: 50px;
         flex-wrap: nowrap;       
         overflow-x: auto;        
-        justify-content: flex-start;
-        padding-bottom: 8px;     
+        justify-content: flex-start;  
         -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;  
+        scrollbar-width: thin;
+        scroll-behavior: smooth;
     }
   
     .log-grid-scroll::-webkit-scrollbar {
@@ -226,8 +232,8 @@
   
     .log-row-scroll {
         overflow: hidden;  
-        -webkit-mask-image: linear-gradient(to right, black 90%, transparent 100%);
-        mask-image: linear-gradient(to right, black 90%, transparent 100%); 
+        -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 85%, transparent 100%);
+        mask-image: linear-gradient(to right, transparent 0%, black 8%, black 85%, transparent 100%); 
     }
     
 }
@@ -235,12 +241,14 @@
 @media (max-width: 1080px) {
 
     .com-grid-scroll {
+        padding-left: 40px;
+        padding-right: 50px;
         flex-wrap: nowrap;       
         overflow-x: auto;        
-        justify-content: flex-start;
-        padding-bottom: 8px;     
+        justify-content: flex-start;   
         -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;  
+        scrollbar-width: thin;
+        scroll-behavior: smooth;
     }
   
     .com-grid-scroll::-webkit-scrollbar {
@@ -253,8 +261,8 @@
   
     .com-row-scroll {
         overflow: hidden;  
-        -webkit-mask-image: linear-gradient(to right, black 90%, transparent 100%);
-        mask-image: linear-gradient(to right, black 90%, transparent 100%); 
+        -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 85%, transparent 100%);
+        mask-image: linear-gradient(to right, transparent 0%, black 8%, black 85%, transparent 100%); 
     }
     
 }
@@ -283,26 +291,24 @@
     }
 
     .web-grid-scroll {
+        padding-left: 40px;
+        padding-right: 50px;
         flex-wrap: nowrap;       
         overflow-x: auto;        
-        justify-content: flex-start;
-        padding-bottom: 8px;     
+        justify-content: flex-start;    
         -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;  
+        scrollbar-width: thin;
+        scroll-behavior: smooth;
     }
-  
-    .web-grid-scroll::-webkit-scrollbar {
-        display: none;           
-    }
-  
+
     .web-card-scroll {
         flex-shrink: 0;       
     }
   
     .web-row-scroll {
         overflow: hidden;  
-        -webkit-mask-image: linear-gradient(to right, black 90%, transparent 100%);
-        mask-image: linear-gradient(to right, black 90%, transparent 100%); 
+        -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 85%, transparent 100%);
+        mask-image: linear-gradient(to right, transparent 0%, black 8%, black 85%, transparent 100%); 
     }
     
 }
