@@ -142,7 +142,7 @@ export default function Team() {
     {
       name: "Sufiyan Shariff",
       role: "Experience Member",
-      image: "../../src/assets/profilepics/Sufiyan Shariff.png",
+      image: "../../src/assets/profilepics/Sufiyan Shariff.jpeg",
       linkedin: "https://www.linkedin.com/in/sufiyan-shariff-22354021a/",
       emblems: exp_emblems
     },
@@ -186,7 +186,7 @@ export default function Team() {
     {
       name: "Het Patel",
       role: "Logistics Member",
-      image: "../../src/assets/profilepics/Gauri Khanolkar.jpeg",
+      image: "../../src/assets/profilepics/Het Patel.png",
       linkedin: "https://www.linkedin.com/in/het-patel-168684388/",
       emblems: log_emblems
     },
@@ -252,7 +252,7 @@ export default function Team() {
       name: "Stephanie Hermosillo",
       role: "Outreach Member",
       image: "../../src/assets/profilepics/unknown.jpg",
-      linkedin: "https://www.linkedin.com/company/capture-the-flame/",
+      linkedin: "https://www.linkedin.com/in/stephanie-hermosillo-465000244/",
       emblems: outreach_emblems
     },
     { 
