@@ -43,7 +43,7 @@ html, body, #root {
   bottom: -12vw;
   width: 100%;
   height: 26vw;
-  z-index: 9999;
+  z-index: 1;
   pointer-events: none;
 
   background: var(--transition-img) center / cover no-repeat;
@@ -100,6 +100,34 @@ html, body, #root {
 
 .overlay-card * {
   max-width: 100% !important;
+}
+
+.overlay-card--full {
+  width: 100%;
+  max-width: 100%;
+}
+
+.overlay--sponsors {
+  display: block;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.bunting {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  overflow: visible;
+  z-index: 5;
+}
+
+.bunting img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 .cloud-btn {
@@ -169,69 +197,12 @@ footer > h1 {
 @media (max-width: 768px) {
   .overlay { padding-top: 3.5rem; }
   .overlay-card { width: min(560px, 92vw); }
+  .overlay--sponsors { padding: 2rem 1rem 1rem; }
   .cloud-btn { top: clamp(30px, 35px, 30px); }
   .cloud-btn img { width: clamp(100px, 70px, 110px); }
   .cloud-label { font-size: clamp(0.8rem, 2.2vw, 2rem); }
-}
-
-.overlay-card--team {
-  pointer-events: auto;
-  width: min(1300px, 92vw);
-  max-width: 92vw;
-  overflow: visible;
-  position: absolute;
-}
-
-.slide--stone {
-  position: relative;
-  overflow: visible;
-}
-
-@media (max-width: 350px) {
-  .slide--stone {
-    position: relative;
-    overflow: hidden;
+  .slide--endPath {
+    overflow: visible;
   }
 }
 
-@media (min-width: 350px) {
-  .hide-abv-350px {
-      display: none;
-  }
-}
-
-@media (min-width: 400px) {
-  .hide-abv-400px {
-      display: none;
-  }
-}
-
-@media (min-width: 450px) {
-  .hide-abv-450px {
-      display: none;
-  }
-}
-
-@media (min-width: 600px) {
-  .hide-abv-600px {
-      display: none;
-  }
-}
-
-@media (min-width: 700px) {
-  .hide-abv-700px {
-      display: none;
-  }
-}
-
-@media (min-width: 1025px) {
-  .hide-abv-1025px {
-      display: none;
-  }
-}
-
-@media (min-width: 1650px) {
-  .hide-abv-1650px {
-      display: none;
-  }
-}

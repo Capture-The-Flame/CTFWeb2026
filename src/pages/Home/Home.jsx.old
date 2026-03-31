@@ -9,8 +9,6 @@ import stone from "../../assets/backgroundArt/CTF_Stone3.svg";
 import dragon from "../../assets/backgroundArt/dragon_lair.svg";
 import cloud from "../../assets/pieces/ctf_cloud.svg";
 import scroll from "../../assets/pieces/scroll.svg";
-import bunting from "../../assets/pieces/sponsors_banner.svg";
-
 
 
 import About from "../../sections/About/About.jsx";
@@ -49,7 +47,7 @@ export default function Home() {
             {/* About Anchor */}
             <div id="about" className="anchor anchor--seam">
                 <div className="overlay overlay--about">
-                    <div className="overlay-card overlay-card--full">
+                    <div className="overlay-card">
                         <About />
                     </div>
                 </div>
@@ -79,15 +77,9 @@ export default function Home() {
                 <img src={endPath} alt="end path" className="slide-art"/>
 
                 <div className="overlay overlay--sponsors">
-
-                    <div className="bunting">
-                      <img src={bunting} alt="Sponsors Pennant Bunting" />
-                    </div>
-
-                    <div className="overlay-card overlay-card--full">          
+                    <div className="overlay-card">
                         <Sponsors />
                     </div>
-
                 </div>
             </section>
 
@@ -100,17 +92,11 @@ export default function Home() {
             </section>
 
             <section id="team" className="slide slide--stone">
-            
                 <img src={stone} alt="stone" className="slide-art"/>
-                <img src={stone} alt="stone" className="slide-art hide-abv-350px"/>
-                <img src={stone} alt="stone" className="slide-art hide-abv-400px"/>
-                <img src={stone} alt="stone" className="slide-art hide-abv-450px"/>
-                <img src={stone} alt="stone" className="slide-art hide-abv-600px"/>
-                <img src={stone} alt="stone" className="slide-art hide-abv-700px"/>
-                <img src={stone} alt="stone" className="slide-art hide-abv-1025px"/>
-                <img src={stone} alt="stone" className="slide-art hide-abv-1650px"/>
+                <img src={stone} alt="stone" className="slide-art"/>
+
                 <div className="overlay overlay--team">
-                    <div className="overlay-card--team">
+                    <div className="overlay-card">
                         <Team />
                     </div>
                 </div>

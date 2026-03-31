@@ -1,0 +1,78 @@
+.socials {
+  position: relative;
+  margin-top: 4rem;
+
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+/*
+.follow-gem {
+  position: relative;
+  width: clamp(120px, 15vw, 150px);
+  aspect-ratio: 1 / 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 1rem;
+}
+
+.follow-text {
+  position: relative;
+  z-index: 1;
+
+  font-family: "fellEnglish", monospace;
+  font-size: clamp(1rem, 1.6vw, 1.4rem);
+  letter-spacing: 0.15rem;
+
+  color: white;
+  text-align: center;
+}
+*/
+.social-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
+  justify-items: center;
+  align-items: center;
+}
+
+/* Gems */
+.social-gem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(80px, 10vw, 100px);
+  aspect-ratio: 1 / 1;
+  text-decoration: none;
+  color: inherit;
+}
+
+.gem-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.social-gem svg {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  z-index: 1;
+  color: #ffffff;
+}
+
+.social-gem:hover {
+  transform: translateY(-6px) scale(1.1);
+  transition: transform 0.2s ease;
+}
