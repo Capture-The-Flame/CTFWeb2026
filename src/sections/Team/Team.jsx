@@ -1,10 +1,10 @@
 import "./Team.css";
-import director_emblems from "../../assets/pieces/ctf_emblems_director.png";
-import comms_emblems from "../../assets/pieces/ctf_emblems_comms.png";
-import exp_emblems from "../../assets/pieces/ctf_emblems_exp.png";
-import log_emblems from "../../assets/pieces/ctf_emblems_log.png";
-import outreach_emblems from "../../assets/pieces/ctf_emblems_outreach.png";
-import webdev_emblems from "../../assets/pieces/ctf_emblems_webdev.png";
+import director_emblems from "../../assets/pieces/ctf_emblems_director.svg";
+import comms_emblems from "../../assets/pieces/ctf_emblems_comms.svg";
+import exp_emblems from "../../assets/pieces/ctf_emblems_exp.svg";
+import log_emblems from "../../assets/pieces/ctf_emblems_log.svg";
+import outreach_emblems from "../../assets/pieces/ctf_emblems_outreach.svg";
+import webdev_emblems from "../../assets/pieces/ctf_emblems_webdev.svg";
 
 export default function Team() {
   const directors = [
