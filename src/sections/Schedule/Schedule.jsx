@@ -98,7 +98,11 @@ const scheduleCharacters = [
     // custom Shadow Properties:
     shadowBottom: "-10px",  // height
     shadowWidth: "80%",     // width 
-    shadowLeft: "50%" },    // horizontal position
+    shadowLeft: "50%",      // horizontal position
+    
+    mobileShadowBottom: "-5px", 
+    mobileShadowWidth: "80%",
+    mobileShadowLeft: "50%" },    
 
   { id: 2, label: "Click on us for the schedule!", src: char2, 
     top: "60%", left: "74%",
@@ -106,7 +110,11 @@ const scheduleCharacters = [
     width: "11%",
     shadowBottom: "-2px", 
     shadowWidth: "90%",     
-    shadowLeft: "43%"},
+    shadowLeft: "43%",
+  
+    mobileShadowBottom: "-5px", 
+    mobileShadowWidth: "90%",
+    mobileShadowLeft: "40%"},
 
   { id: 3, label: "", src: char3, 
     top: "55%", left: "-4%",
@@ -114,7 +122,11 @@ const scheduleCharacters = [
     width: "14%", flip: true,
     shadowBottom: "-8px", 
     shadowWidth: "100%",     
-    shadowLeft: "64" },
+    shadowLeft: "64",
+  
+    mobileShadowBottom: "-5px", 
+    mobileShadowWidth: "100%",
+    mobileShadowLeft: "60%"},
 
   { id: 4, label: "Welcome to CTF!", src: char4, 
     top: "37%", left: "50%",
@@ -122,7 +134,11 @@ const scheduleCharacters = [
     width: "19%", rotate: "90deg",
     shadowBottom: "-25px", 
     shadowWidth: "50%",     
-    shadowLeft: "50%" },
+    shadowLeft: "50%",
+
+    mobileShadowBottom: "-14px", 
+    mobileShadowWidth: "60%",
+    mobileShadowLeft: "50%" },
 
   { id: 5, label: "", src: char5, 
     top: "26%", left: "87%",
@@ -130,7 +146,11 @@ const scheduleCharacters = [
     width: "29%",
     shadowBottom: "5px", 
     shadowWidth: "40%",     
-    shadowLeft: "50%" }
+    shadowLeft: "50%",
+
+    mobileShadowBottom: "-3px", 
+    mobileShadowWidth: "50%",
+    mobileShadowLeft: "50%" }
 ];
 
 export default function Schedule() {
@@ -163,6 +183,9 @@ export default function Schedule() {
             '--shadow-bottom': char.shadowBottom || '-10px', 
             '--shadow-width': char.shadowWidth || '60%',     
             '--shadow-left': char.shadowLeft || '50%',
+            '--mobile-shadow-bottom': char.mobileShadowBottom || char.shadowBottom || '-10px',
+            '--mobile-shadow-width': char.mobileShadowWidth || char.shadowWidth || '60%',
+            '--mobile-shadow-left': char.mobileShadowLeft || char.shadowLeft || '50%',
             width: char.width,
           }}
           aria-label={`View schedule for ${char.label}`}

@@ -59,12 +59,10 @@
   transform: translateX(-50%);
   height: 15px; 
   border-radius: 50%; 
-  
   background: rgba(0, 0, 0, 0.5); 
   filter: blur(6px); 
   z-index: -1; 
   pointer-events: none; 
-  
   transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -192,12 +190,8 @@
   display: flex;
   justify-content: space-between;
   
-  /* 1. Change from 'center' to 'flex-start' */
-  /* This anchors everything to the top, so long text expands cleanly downward */
   align-items: flex-start; 
   
-  /* 2. Add a gap */
-  /* This creates an unbreakable invisible wall between your columns */
   gap: 15px; 
   
   padding: 12px 10px;
@@ -316,5 +310,10 @@
   }
   .schedule-item .time {
     font-size: 90%;
+  }
+  .char-btn::after {
+    bottom: var(--mobile-shadow-bottom);
+    left: var(--mobile-shadow-left);
+    width: var(--mobile-shadow-width);
   }
 }
