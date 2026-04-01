@@ -49,7 +49,7 @@
 .banner--featured {
   width: clamp(120px, 30vw, 220px);
 
-  transform: translateY(-5px);
+  transform: translateY(-5px) scale(1.15);
   /*z-index: 2;*/
 }
 
