@@ -300,7 +300,7 @@
 }
 
 .name-card {
-    width: 150px;
+    width: 180px;
     text-decoration: none;
     color: #000000;
     cursor: pointer;
@@ -339,4 +339,26 @@
 
 .special-thanks h4 {
     font-size: large;
+}
+
+.team-pfp {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;                   /* sits above the nameplate */
+    left: -10px;
+    transform: translateX(-50%);  /* centered horizontally */
+    transform: translateY(-50%);  /* centered horizontally */
+    border: #000000 4px solid; /* optional border for visibility */
+    z-index: 3;
+}
+
+.special {
+    width: 170px;
+}
+
+.right {
+    left: 97%;
 }

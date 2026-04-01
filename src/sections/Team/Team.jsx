@@ -305,31 +305,37 @@ export default function Team() {
     {
       name: "Aukovien",
       role: "Experience++",
+      pfp: "../../src/assets/profilepics/Aukovien.png",
       linkedin: "https://www.linkedin.com/in/anarenkhzol/",
     },
     {
       name: "Derick Johnson",
       role: "Experience++",
+      pfp: "../../src/assets/profilepics/Derick Johnson.jpeg",
       linkedin: "https://www.linkedin.com/in/derick-m-johnson/",
     },
     {
       name: "Lei Chen",
       role: "Experience++",
+      pfp: "../../src/assets/profilepics/Lei Chen.jpeg",
       linkedin: "https://www.linkedin.com/in/lei-chen-uic/",
     },
     {
       name: "Lily Gross",
       role: "Experience++",
+      pfp: "../../src/assets/profilepics/Lily Gross.jpeg",
       linkedin: "https://www.linkedin.com/in/lily-gross-lbg/",
     },
     {
       name: "J Benitez",
       role: "Experience++",
+      pfp: "../../src/assets/profilepics/J Benitez.jpeg",
       linkedin: "https://www.linkedin.com/in/jbenit17/",
     },
     {
       name: "Nefeli Georgilas",
       role: "Experience++",
+      pfp: "../../src/assets/profilepics/Nefeli Georgilas.png",
       linkedin: "https://www.linkedin.com/in/nefeli-georgilas/",
     },
   ]
@@ -489,7 +495,10 @@ export default function Team() {
               rel="noopener noreferrer"
               className="name-card"
             >
-              <div className="team-info">
+              <div className="team-info special">
+                {member.pfp && (
+                  <img className="team-pfp" src={member.pfp} alt={member.name} />
+                )}
                 <h3>{member.name}</h3>
                 <p>{member.role}</p>
               </div>  
