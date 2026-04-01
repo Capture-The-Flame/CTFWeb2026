@@ -47,6 +47,33 @@
   z-index: 3;
 }
 
+.char-btn::after {
+  content: ''; 
+  position: absolute;
+  
+  /* custom position set in jsx */
+  bottom: var(--shadow-bottom);
+  left: var(--shadow-left);
+  width: var(--shadow-width);
+  
+  transform: translateX(-50%);
+  height: 15px; 
+  border-radius: 50%; 
+  
+  background: rgba(0, 0, 0, 0.5); 
+  filter: blur(6px); 
+  z-index: -1; 
+  pointer-events: none; 
+  
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* hover animations */
+.char-btn:hover::after {
+  transform: translateX(-50%) scale(0.7);
+  opacity: 0.5;
+}
+
 .char-label {
   /* text on hover */
   opacity: 1;

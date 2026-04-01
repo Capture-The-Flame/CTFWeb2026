@@ -94,23 +94,43 @@ const scheduleCharacters = [
   { id: 1, label: "Hey!", src: char1, 
     top: "22%", left: "14%",
     mobileTop: "18%", mobileLeft: "10%",
-    width: "10%", flip: true },
+    width: "10%", flip: true,
+    // custom Shadow Properties:
+    shadowBottom: "-10px",  // height
+    shadowWidth: "80%",     // width 
+    shadowLeft: "50%" },    // horizontal position
+
   { id: 2, label: "Click on us for the schedule!", src: char2, 
     top: "60%", left: "74%",
     mobileTop: "60%", mobileLeft: "73%",
-    width: "11%", },
+    width: "11%",
+    shadowBottom: "-2px", 
+    shadowWidth: "90%",     
+    shadowLeft: "43%"},
+
   { id: 3, label: "", src: char3, 
     top: "55%", left: "-4%",
     mobileTop: "40%", mobileLeft: "26%",
-    width: "14%", flip: true },
+    width: "14%", flip: true,
+    shadowBottom: "-8px", 
+    shadowWidth: "100%",     
+    shadowLeft: "64" },
+
   { id: 4, label: "Welcome to CTF!", src: char4, 
     top: "37%", left: "50%",
     mobileTop: "25%", mobileLeft: "50%",
-    width: "19%", rotate: "90deg" },
+    width: "19%", rotate: "90deg",
+    shadowBottom: "-25px", 
+    shadowWidth: "50%",     
+    shadowLeft: "50%" },
+
   { id: 5, label: "", src: char5, 
     top: "26%", left: "87%",
     mobileTop: "22%", mobileLeft: "76%",
-    width: "29%" }
+    width: "29%",
+    shadowBottom: "5px", 
+    shadowWidth: "40%",     
+    shadowLeft: "50%" }
 ];
 
 export default function Schedule() {
@@ -140,6 +160,9 @@ export default function Schedule() {
             '--desktop-left': char.left,
             '--mobile-top': char.mobileTop || char.top,   
             '--mobile-left': char.mobileLeft || char.left, 
+            '--shadow-bottom': char.shadowBottom || '-10px', 
+            '--shadow-width': char.shadowWidth || '60%',     
+            '--shadow-left': char.shadowLeft || '50%',
             width: char.width,
           }}
           aria-label={`View schedule for ${char.label}`}
