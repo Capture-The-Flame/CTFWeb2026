@@ -179,7 +179,7 @@ export default function Team() {
     {
       name: "Ekram Yenus",
       role: "Logistics Member",
-      image: "../../src/assets/profilepics/Ekram Yenus.jpeg",
+      image: "../../src/assets/profilepics/Ekram Yenus.png",
       linkedin: "https://www.linkedin.com/in/ekram-yenus-56410b387/",
       emblems: log_emblems
     },
@@ -301,6 +301,39 @@ export default function Team() {
     },
   ]
 
+  const expPlusMembers = [
+    {
+      name: "Aukovien",
+      role: "Experience++",
+      linkedin: "https://www.linkedin.com/in/anarenkhzol/",
+    },
+    {
+      name: "Derick Johnson",
+      role: "Experience++",
+      linkedin: "https://www.linkedin.com/in/derick-m-johnson/",
+    },
+    {
+      name: "Lei Chen",
+      role: "Experience++",
+      linkedin: "https://www.linkedin.com/in/lei-chen-uic/",
+    },
+    {
+      name: "Lily Gross",
+      role: "Experience++",
+      linkedin: "https://www.linkedin.com/in/lily-gross-lbg/",
+    },
+    {
+      name: "J Benitez",
+      role: "Experience++",
+      linkedin: "https://www.linkedin.com/in/jbenit17/",
+    },
+    {
+      name: "Nefeli Georgilas",
+      role: "Experience++",
+      linkedin: "https://www.linkedin.com/in/nefeli-georgilas/",
+    },
+  ]
+
   return(
     <section className="team-section" id="team">
       <h2>Meet The Team</h2> 
@@ -332,7 +365,7 @@ export default function Team() {
         <div className="team-grid com-grid com-grid-scroll">
           {commsMembers.map((member, index) => (
             <a 
-              key={index}x
+              key={index}
               href={member.linkedin} 
               target="_blank" 
               rel="noopener noreferrer"
@@ -355,7 +388,7 @@ export default function Team() {
         <div className="team-grid exp-grid exp-grid-scroll">
           {expMembers.map((member, index) => (
             <a 
-              key={index}x
+              key={index}
               href={member.linkedin} 
               target="_blank" 
               rel="noopener noreferrer"
@@ -378,7 +411,7 @@ export default function Team() {
         <div className="team-grid log-grid log-grid-scroll">
           {logMembers.map((member, index) => (
             <a 
-              key={index}x
+              key={index}
               href={member.linkedin} 
               target="_blank" 
               rel="noopener noreferrer"
@@ -401,7 +434,7 @@ export default function Team() {
         <div className="team-grid out-grid out-grid-scroll">
           {outreachMembers.map((member, index) => (
             <a 
-              key={index}x
+              key={index}
               href={member.linkedin} 
               target="_blank" 
               rel="noopener noreferrer"
@@ -424,7 +457,7 @@ export default function Team() {
         <div className="team-grid web-grid web-grid-scroll">
           {webdevMembers.map((member, index) => (
             <a 
-              key={index}x
+              key={index}
               href={member.linkedin} 
               target="_blank" 
               rel="noopener noreferrer"
@@ -435,6 +468,27 @@ export default function Team() {
                 <img src={member.image} alt={member.name} className="team-image default" />
                 <img src={member.image} alt={member.name} className="team-image hover" />
               </div>
+              <div className="team-info">
+                <h3>{member.name}</h3>
+                <p>{member.role}</p>
+              </div>  
+            </a>
+          ))}
+        </div>
+      </div>
+      <div className="special-thanks">
+        <h4>Special Thanks</h4>
+      </div>
+      <div className="team-row">
+        <div className="team-grid">
+          {expPlusMembers.map((member, index) => (
+            <a 
+              key={index}
+              href={member.linkedin} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="name-card"
+            >
               <div className="team-info">
                 <h3>{member.name}</h3>
                 <p>{member.role}</p>
