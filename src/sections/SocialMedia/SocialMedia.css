@@ -54,8 +54,17 @@
 }
 
 @media (max-width: 768px) {
+  .socials {
+    margin-top: 1.1rem;
+    margin-left: 3rem;
+  }
   .social-links {
     flex-direction: column;
     align-items: center;
+    gap: 0;
+  }
+
+  .social-gem {
+    width: clamp(60px, 14vw, 80px);
   }
 }
