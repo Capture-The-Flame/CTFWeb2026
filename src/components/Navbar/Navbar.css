@@ -15,7 +15,7 @@
   background: rgba(0,0,0,.25);
     
   color:#fff;
-  z-index: 10000;
+  z-index: 4;
 }
 
 .logo { height: 36px; width: auto; display: block; }

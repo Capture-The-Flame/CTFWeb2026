@@ -43,7 +43,8 @@ html, body, #root {
   bottom: -12vw;
   width: 100%;
   height: 26vw;
-  z-index: 1;
+  /* z-index: 1 */
+  z-index: 2;
   pointer-events: none;
 
   background: var(--transition-img) center / cover no-repeat;
@@ -61,11 +62,11 @@ html, body, #root {
   width: 100%;
   max-width: 100%;
   position: relative;
-  z-index: 10;
   display: grid;
   place-items: center;
   padding: 0 1rem;
   scroll-margin-top: var(--nav-h, 90px);
+  overflow: visible;
 }
 
 .anchor--seam {
@@ -89,17 +90,14 @@ html, body, #root {
   width: min(1000px, 92vw);
   max-width: 92vw;
 
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .overlay-card > * {
   width: 100% !important;
   max-width: 100% !important;
   height: 100%;
-}
-
-.overlay-card * {
-  max-width: 100% !important;
+  overflow: visible;
 }
 
 .overlay-card--full {
