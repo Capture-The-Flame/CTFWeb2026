@@ -26,7 +26,7 @@ export default function Home() {
     return (
         <div className="home">
 
-            <section id="home" className="slide slide--home" style={{ "--transition-img": `url(${scroll})` }}>
+            <section id="home" className="slide slide--home">
                 <img src={home} alt="chicago skyline" className="slide-art"/>
                 <img src={logo} alt="logo" className="logo"/>
 
@@ -49,15 +49,12 @@ export default function Home() {
                 </a>
             </section>
 
-            <div className="mobile-scroll-wrap" aria-hidden="true">
-                <img src={mobileScroll} alt="mobile-scroll" className="mobile-scroll"/>
-            </div>
+            <div className="mobile-scroll-wrap" id="about">
+                <img src={mobileScroll} alt="mobile-scroll" className="mobile-scroll" />
 
-            {/* About Anchor */}
-            <div id="about" className="anchor anchor--seam">
                 <div className="overlay overlay--about">
                     <div className="overlay-card overlay-card--full">
-                        <About />
+                    <About />
                     </div>
                 </div>
             </div>
