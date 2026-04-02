@@ -254,8 +254,8 @@
   .board-close-btn { top: 4%; right: 2%; font-size: 25px; }
 
   .carousel-arrow { position: absolute; top: 50%; transform: translateY(-80%); font-size: 40px; background: transparent; color: #D8BC94; border: none; z-index: 100; }
-  .carousel-arrow.left { left: 6%; }
-  .carousel-arrow.right { right: 7%; }
+  .carousel-arrow.left { left: 7%; }
+  .carousel-arrow.right { left: 92%; transform: translate(-100%, -80%);}
 
   .carousel-dots { position: absolute; bottom: 21.3%; left: 50%; transform: translateX(-50%); display: flex; gap: 15px; }
   .dot { width: 10px; height: 11px; border-radius: 50%; background: #AA7240; border: none; }
