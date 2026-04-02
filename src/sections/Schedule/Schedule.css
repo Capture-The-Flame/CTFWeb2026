@@ -115,6 +115,7 @@
   height: 100vh;
   background: rgba(0, 0, 0, 0.75); /* black with 75% opacity */
   z-index: 9999; /* sits on top of everything */
+  padding-top: 35px;
   
   /* centers tablet */
   display: flex;
@@ -125,24 +126,23 @@
 }
 
 .modal-content {
-  position: relative; 
-  width: 90%;
-  max-width: 600px; 
-  
+  position: relative;
+  width: min(90vw, 600px);
+  max-height: 88vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
-
-  animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* for the image */
 .modal-bg-svg {
+  display: block;
   width: 100%;
   height: auto;
-  display: block;
-  /* optional drop shadow */
-  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5)); 
+  max-height: 88vh;
+  object-fit: contain;
+
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
 }
 
 .modal-text-container {
@@ -206,7 +206,7 @@
 .schedule-item .time {
   width: 35%; 
   text-align: left;
-  font-size: 72%;
+  font-size: 90%;
   
   line-height: 1.2;         
   overflow-wrap: break-word; 
