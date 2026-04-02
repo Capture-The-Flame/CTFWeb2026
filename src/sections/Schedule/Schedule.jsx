@@ -94,7 +94,7 @@ const scheduleCharacters = [
   { id: 1, label: "Hey!", src: char1, 
     top: "25%", left: "14%",
     midTop: "18%", midLeft: "4%",
-    mobileTop: "18%", mobileLeft: "10%",
+    mobileTop: "1%", mobileLeft: "10%",
     width: "clamp(40px, 8vw, 100px)", flip: true,
     // custom Shadow Properties:
     shadowBottom: "-10px",  // height
@@ -103,7 +103,10 @@ const scheduleCharacters = [
     
     mobileShadowBottom: "-5px", 
     mobileShadowWidth: "80%",
-    mobileShadowLeft: "50%" },    
+    mobileShadowLeft: "50%",
+    labelTop: "-9%", 
+  },
+    
 
   { id: 2, label: "Click on us for the schedule!", src: char2, 
     top: "80%", left: "65%",
@@ -117,7 +120,18 @@ const scheduleCharacters = [
   
     mobileShadowBottom: "-5px", 
     mobileShadowWidth: "90%",
-    mobileShadowLeft: "40%"},
+    mobileShadowLeft: "40%",
+    labelTop: "5%",
+    labelLeft: "67%",
+    labelShiftX: "-110%",
+    labelShiftY: "-120%",
+
+    mobileLabelTop: "5%",
+    mobileLabelLeft: "20%",
+    mobileLabelShiftX: "-110%",
+    mobileLabelShiftY: "-120%",
+  },
+    
 
   // { id: 3, label: "", src: char3, 
   //   top: "55%", left: "-4%",
@@ -134,15 +148,18 @@ const scheduleCharacters = [
   { id: 4, label: "Welcome to CTF!", src: char4, 
     top: "55%", left: "50%",
     midTop: "37%", midLeft: "40%",
-    mobileTop: "25%", mobileLeft: "50%",
-    width: "clamp(100px, 15vw, 200px)", rotate: "90deg",
+    mobileTop: "20%", mobileLeft: "50%",
+    width: "clamp(92px, 14vw, 200px)", rotate: "90deg",
     shadowBottom: "-25px", 
     shadowWidth: "50%",     
     shadowLeft: "50%",
 
     mobileShadowBottom: "-14px", 
     mobileShadowWidth: "60%",
-    mobileShadowLeft: "50%" },
+    mobileShadowLeft: "50%",
+    
+    labelTop: "-15%", 
+  },
 
   // { id: 5, label: "", src: char5, 
   //   top: "26%", left: "87%",
@@ -190,27 +207,45 @@ export default function Schedule() {
         <button 
           key={char.id} 
           className="char-btn"
-          style={{
-            '--desktop-top': isMobile
-              ? (char.mobileTop || char.top)
-              : isMidDesktop
-                ? (char.midTop || char.top)
-                : char.top,
+        style={{
+          '--desktop-top': isMobile
+            ? (char.mobileTop || char.top)
+            : isMidDesktop
+              ? (char.midTop || char.top)
+              : char.top,
 
-            '--desktop-left': isMobile
-              ? (char.mobileLeft || char.left)
-              : isMidDesktop
-                ? (char.midLeft || char.left)
-                : char.left,
+          '--desktop-left': isMobile
+            ? (char.mobileLeft || char.left)
+            : isMidDesktop
+              ? (char.midLeft || char.left)
+              : char.left,
 
-            '--shadow-bottom': char.shadowBottom || '-10px',
-            '--shadow-width': char.shadowWidth || '60%',
-            '--shadow-left': char.shadowLeft || '50%',
-            '--mobile-shadow-bottom': char.mobileShadowBottom || char.shadowBottom || '-10px',
-            '--mobile-shadow-width': char.mobileShadowWidth || char.shadowWidth || '60%',
-            '--mobile-shadow-left': char.mobileShadowLeft || char.shadowLeft || '50%',
-            width: char.width,
-          }}
+          '--shadow-bottom': char.shadowBottom || '-10px',
+          '--shadow-width': char.shadowWidth || '60%',
+          '--shadow-left': char.shadowLeft || '50%',
+
+          '--mobile-shadow-bottom': char.mobileShadowBottom || char.shadowBottom || '-10px',
+          '--mobile-shadow-width': char.mobileShadowWidth || char.shadowWidth || '60%',
+          '--mobile-shadow-left': char.mobileShadowLeft || char.shadowLeft || '50%',
+
+          '--label-top': isMobile
+            ? (char.mobileLabelTop || char.labelTop || '12%')
+            : (char.labelTop || '12%'),
+
+          '--label-left': isMobile
+            ? (char.mobileLabelLeft || char.labelLeft || '50%')
+            : (char.labelLeft || '50%'),
+
+          '--label-shift-x': isMobile
+            ? (char.mobileLabelShiftX || char.labelShiftX || '-50%')
+            : (char.labelShiftX || '-50%'),
+
+          '--label-shift-y': isMobile
+            ? (char.mobileLabelShiftY || char.labelShiftY || '-100%')
+            : (char.labelShiftY || '-100%'),
+
+          width: char.width,
+        }}
           aria-label={`View schedule for ${char.label}`}
           onClick={() => openModal(char)}
         >
