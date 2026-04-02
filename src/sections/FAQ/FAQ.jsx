@@ -39,7 +39,7 @@ const FAQ_CONTENT = {
     mobile: { 
       styles: { pageRot: "0deg", textRot: "0deg", top: "30%", left: "43%", width: "40%" },
       textStyles: { top: "20%", left: "10%", width: "80%", fontSize: "2.2vw", bodySize: "1.3vw" },
-      button: {bottom: "35%", right: "8%"}
+      button: {bottom: "36%", right: "8%"}
     }
   },
   3: { 
@@ -69,7 +69,7 @@ const FAQ_CONTENT = {
     mobile: { 
       styles: { pageRot: "0deg", textRot: "0deg", top: "30%", left: "16%", width: "40%" },
       textStyles: { top: "15%", left: "12%", width: "75%", fontSize: "2.4vw", bodySize: "1.4vw" },
-      button: {bottom: "30%", right: "8%"}
+      button: {bottom: "36%", right: "8%"}
     }
   },
   5: { 
