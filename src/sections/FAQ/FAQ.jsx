@@ -59,7 +59,7 @@ const FAQ_CONTENT = {
   },
   4: { 
     img: pageThree, 
-    text: { title: "Do I have to be a student at UIC to participate?", body: "No! The competition is available to any Chicagoland Universities!" },
+    text: { title: "Must I be a UIC student to participate?", body: "No! The competition is available to any Chicagoland Universities!" },
     laptop: { 
       styles: { rot: "0deg", top: "65%", left: "15%", width: "18%" },
       textStyles: { top: "18%", left: "12%", width: "75%", fontSize: "1.3vw", bodySize: "1.1vw" },
