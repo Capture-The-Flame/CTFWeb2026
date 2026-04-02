@@ -10,6 +10,7 @@ import dragon from "../../assets/backgroundArt/dragon_lair.svg";
 import cloud from "../../assets/pieces/ctf_cloud.svg";
 import scroll from "../../assets/pieces/scroll.svg";
 import bunting from "../../assets/pieces/sponsors_banner.svg";
+import logo from "../../assets/pieces/CTF_Logo_Horizontal_Webpage.svg";
 
 
 
@@ -26,7 +27,8 @@ export default function Home() {
 
             <section id="home" className="slide slide--home" style={{ "--transition-img": `url(${scroll})` }}>
                 <img src={home} alt="chicago skyline" className="slide-art"/>
-                
+                <img src={logo} alt="logo" className="logo"/>
+
                 <a 
                     href="#register"
                     className="cloud-btn cloud-btn--left"

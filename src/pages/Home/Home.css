@@ -192,6 +192,57 @@ html, body, #root {
   pointer-events: none;
 }
 
+.logo {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(190px, 35vw, 700px) !important;
+  max-width: none !important;
+  height: auto !important;
+  display: block;
+  z-index: 9;
+
+  animation: flameFlicker 5.0s infinite alternate ease-in-out;
+}
+
+@keyframes flameFlicker {
+  0% {
+    filter:
+      drop-shadow(0 0 6px #DC5F2A)
+      drop-shadow(0 0 10px #C24A1A)
+      drop-shadow(0 0 12px #A63E17)
+  }
+
+  25% {
+    filter:
+      drop-shadow(0 0 10px #DC5F2A)
+      drop-shadow(0 0 18px #C24A1A)
+      drop-shadow(0 0 28px #A63E17)
+  }
+
+  50% {
+    filter:
+      drop-shadow(0 0 7px #DC5F2A)
+      drop-shadow(0 0 14px #C24A1A)
+      drop-shadow(0 0 22px #A63E17)
+  }
+
+  75% {
+    filter:
+      drop-shadow(0 0 12px #DC5F2A)
+      drop-shadow(0 0 22px #C24A1A)
+      drop-shadow(0 0 35px #C24A1A)
+  }
+
+  100% {
+    filter:
+      drop-shadow(0 0 8px #DC5F2A)
+      drop-shadow(0 0 16px #C24A1A)
+      drop-shadow(0 0 24px #C24A1A)
+  }
+}
+
 footer {
   background: linear-gradient(to bottom, #463c5d, black);
   /* background-color: black; */
