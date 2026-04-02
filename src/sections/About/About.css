@@ -23,7 +23,7 @@
 .about-text {
   font-size: clamp(0.8rem, 1.6vw, 1.2rem);
   line-height: 1.5;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   max-width: 65ch;
 }
 

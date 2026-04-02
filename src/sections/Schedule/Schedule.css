@@ -3,12 +3,12 @@
 .schedule-scene {
   position: relative;
   width: 100%;
-  height: 1000px; 
+  height: clamp(420px, 55vw, 900px);
   /* adjust to path height */
   background: transparent;
   border: none;
   overflow: visible; 
-  z-index: 99
+  z-index: 99;
 }
 
 .char-btn {
@@ -304,10 +304,10 @@
     right: 14%;
     bottom: 18%;
   }
-  .char-btn {
+  /* .char-btn {
     top: var(--mobile-top);
     left: var(--mobile-left);
-  }
+  } */
   .schedule-item .time {
     font-size: 90%;
   }

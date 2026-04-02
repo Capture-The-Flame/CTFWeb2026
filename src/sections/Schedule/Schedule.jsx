@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Schedule.css";
 import char1 from "../../assets/scheduleArt/character_01.svg";
 import char2 from "../../assets/scheduleArt/character_02.svg";
@@ -92,9 +92,10 @@ const mainSchedule = [
 
 const scheduleCharacters = [ 
   { id: 1, label: "Hey!", src: char1, 
-    top: "22%", left: "14%",
+    top: "25%", left: "14%",
+    midTop: "18%", midLeft: "4%",
     mobileTop: "18%", mobileLeft: "10%",
-    width: "10%", flip: true,
+    width: "clamp(40px, 8vw, 100px)", flip: true,
     // custom Shadow Properties:
     shadowBottom: "-10px",  // height
     shadowWidth: "80%",     // width 
@@ -105,33 +106,36 @@ const scheduleCharacters = [
     mobileShadowLeft: "50%" },    
 
   { id: 2, label: "Click on us for the schedule!", src: char2, 
-    top: "60%", left: "74%",
+    top: "80%", left: "65%",
+    midTop: "65%", midLeft: "65%",
     mobileTop: "60%", mobileLeft: "73%",
-    width: "11%",
+    width: "clamp(45px, 9vw, 130px)",
     shadowBottom: "-2px", 
     shadowWidth: "90%",     
     shadowLeft: "43%",
+    flip: true,
   
     mobileShadowBottom: "-5px", 
     mobileShadowWidth: "90%",
     mobileShadowLeft: "40%"},
 
-  { id: 3, label: "", src: char3, 
-    top: "55%", left: "-4%",
-    mobileTop: "40%", mobileLeft: "26%",
-    width: "14%", flip: true,
-    shadowBottom: "-8px", 
-    shadowWidth: "100%",     
-    shadowLeft: "64",
+  // { id: 3, label: "", src: char3, 
+  //   top: "55%", left: "-4%",
+  //   mobileTop: "40%", mobileLeft: "26%",
+  //   width: "14%", flip: true,
+  //   shadowBottom: "-8px", 
+  //   shadowWidth: "100%",     
+  //   shadowLeft: "64",
   
-    mobileShadowBottom: "-5px", 
-    mobileShadowWidth: "100%",
-    mobileShadowLeft: "60%"},
+  //   mobileShadowBottom: "-5px", 
+  //   mobileShadowWidth: "100%",
+  //   mobileShadowLeft: "60%"},
 
   { id: 4, label: "Welcome to CTF!", src: char4, 
-    top: "37%", left: "50%",
+    top: "55%", left: "50%",
+    midTop: "37%", midLeft: "40%",
     mobileTop: "25%", mobileLeft: "50%",
-    width: "19%", rotate: "90deg",
+    width: "clamp(100px, 15vw, 200px)", rotate: "90deg",
     shadowBottom: "-25px", 
     shadowWidth: "50%",     
     shadowLeft: "50%",
@@ -140,23 +144,25 @@ const scheduleCharacters = [
     mobileShadowWidth: "60%",
     mobileShadowLeft: "50%" },
 
-  { id: 5, label: "", src: char5, 
-    top: "26%", left: "87%",
-    mobileTop: "22%", mobileLeft: "76%",
-    width: "29%",
-    shadowBottom: "5px", 
-    shadowWidth: "40%",     
-    shadowLeft: "50%",
+  // { id: 5, label: "", src: char5, 
+  //   top: "26%", left: "87%",
+  //   mobileTop: "22%", mobileLeft: "76%",
+  //   width: "29%",
+  //   shadowBottom: "5px", 
+  //   shadowWidth: "40%",     
+  //   shadowLeft: "50%",
 
-    mobileShadowBottom: "-3px", 
-    mobileShadowWidth: "50%",
-    mobileShadowLeft: "50%" }
+  //   mobileShadowBottom: "-3px", 
+  //   mobileShadowWidth: "50%",
+  //   mobileShadowLeft: "50%" }
 ];
 
 export default function Schedule() {
   const [activeCharacter, setActiveCharacter] = useState(null); 
 
   const [openIndex, setOpenIndex] = useState(null);
+
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const handleToggleEvent = (index) => {
    
@@ -169,6 +175,15 @@ export default function Schedule() {
     setOpenIndex(null); 
   };
 
+  useEffect(() => {
+    const handleResize = () => setScreenWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const isMobile = screenWidth <= 768;
+  const isMidDesktop = screenWidth > 768 && screenWidth <= 1400;
+
   return (
     <div className="schedule-scene">
       {scheduleCharacters.map((char) => (
@@ -176,12 +191,20 @@ export default function Schedule() {
           key={char.id} 
           className="char-btn"
           style={{
-            '--desktop-top': char.top,
-            '--desktop-left': char.left,
-            '--mobile-top': char.mobileTop || char.top,   
-            '--mobile-left': char.mobileLeft || char.left, 
-            '--shadow-bottom': char.shadowBottom || '-10px', 
-            '--shadow-width': char.shadowWidth || '60%',     
+            '--desktop-top': isMobile
+              ? (char.mobileTop || char.top)
+              : isMidDesktop
+                ? (char.midTop || char.top)
+                : char.top,
+
+            '--desktop-left': isMobile
+              ? (char.mobileLeft || char.left)
+              : isMidDesktop
+                ? (char.midLeft || char.left)
+                : char.left,
+
+            '--shadow-bottom': char.shadowBottom || '-10px',
+            '--shadow-width': char.shadowWidth || '60%',
             '--shadow-left': char.shadowLeft || '50%',
             '--mobile-shadow-bottom': char.mobileShadowBottom || char.shadowBottom || '-10px',
             '--mobile-shadow-width': char.mobileShadowWidth || char.shadowWidth || '60%',

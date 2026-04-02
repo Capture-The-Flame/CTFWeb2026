@@ -59,7 +59,7 @@ export default function Home() {
                 <img src={begPath} alt="top path" className="slide-art"/>
 
                 <div className="overlay overlay--schedule">
-                    <div className="overlay-card">
+                    <div className="overlay-card overlay-card--full">
                         <Schedule />
                     </div>
                 </div>
