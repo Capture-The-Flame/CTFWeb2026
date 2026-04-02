@@ -179,7 +179,7 @@ html, body, #root {
 .cloud-label {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 47%;
   transform: translate(-50%, -50%) translateY(-8%);
   line-height: 1;
 
