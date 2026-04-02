@@ -6,6 +6,9 @@ import pageOne from "../../assets/pieces/Test2.svg";
 import pageThree from "../../assets/pieces/Test3.svg";
 import pageFour from "../../assets/pieces/Frame4.svg";
 import pageSix from "../../assets/pieces/Frame6.svg";
+import smallOne from "../../assets/pieces/Frame 5.svg";
+import smallTwo from "../../assets/pieces/Frame 8.svg";
+import smallThree from "../../assets/pieces/Frame 10.svg";
 import "./FAQ.css";
 
 const FAQ_CONTENT = {
@@ -66,7 +69,7 @@ const FAQ_CONTENT = {
     mobile: { 
       styles: { pageRot: "0deg", textRot: "0deg", top: "30%", left: "16%", width: "40%" },
       textStyles: { top: "15%", left: "12%", width: "75%", fontSize: "2.4vw", bodySize: "1.4vw" },
-      button: {bottom: "35%", right: "8%"}
+      button: {bottom: "30%", right: "8%"}
     }
   },
   5: { 
@@ -105,9 +108,9 @@ const FAQ_CONTENT = {
 const SECTIONS = [[1, 2], [3, 4], [5, 6]];
 
 const SMALL_BOARD_PAGES = [
-  { img: pageOne, top: "30%", left: "25%", width: "20%", rot: "0deg" },
-  { img: pageSix, top: "31%", left: "53%", width: "18%", rot: "0deg" },
-  { img: pageThree, top: "50%", left: "28%", width: "20%", rot: "0deg" },
+  { img: smallThree, top: "30%", left: "25%", width: "20%", rot: "0deg" },
+  { img: smallTwo, top: "31%", left: "53%", width: "18%", rot: "0deg" },
+  { img: smallOne, top: "50%", left: "28%", width: "20%", rot: "0deg" },
 ];
 
 
