@@ -94,7 +94,7 @@
 .board-close-btn {
   position: absolute; 
   top: 5.5%; 
-  right: 3.5%; 
+  right: 6.5%; 
   font-size: clamp(45px, 10vw, 80px); 
   background: transparent; 
   border: none; 
