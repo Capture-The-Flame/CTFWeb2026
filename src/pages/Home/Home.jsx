@@ -102,13 +102,15 @@ export default function Home() {
             <section id="team" className="slide slide--stone">
             
                 <img src={stone} alt="stone" className="slide-art"/>
+                <img src={stone} alt="stone" className="slide-art"/>
+                <img src={stone} alt="stone" className="slide-art hide-abv-350px"/>
                 <img src={stone} alt="stone" className="slide-art hide-abv-350px"/>
                 <img src={stone} alt="stone" className="slide-art hide-abv-400px"/>
+                <img src={stone} alt="stone" className="slide-art hide-abv-450px"/>
                 <img src={stone} alt="stone" className="slide-art hide-abv-450px"/>
                 <img src={stone} alt="stone" className="slide-art hide-abv-600px"/>
                 <img src={stone} alt="stone" className="slide-art hide-abv-700px"/>
                 <img src={stone} alt="stone" className="slide-art hide-abv-1025px"/>
-                <img src={stone} alt="stone" className="slide-art hide-abv-1650px"/>
                 <div className="overlay overlay--team">
                     <div className="overlay-card--team">
                         <Team />

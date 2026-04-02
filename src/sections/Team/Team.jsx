@@ -142,7 +142,7 @@ export default function Team() {
     {
       name: "Sufiyan Shariff",
       role: "Experience Member",
-      image: "../../src/assets/profilepics/Sufiyan Shariff.png",
+      image: "../../src/assets/profilepics/Sufiyan Shariff.jpeg",
       linkedin: "https://www.linkedin.com/in/sufiyan-shariff-22354021a/",
       emblems: exp_emblems
     },
@@ -179,14 +179,14 @@ export default function Team() {
     {
       name: "Ekram Yenus",
       role: "Logistics Member",
-      image: "../../src/assets/profilepics/Ekram Yenus.jpeg",
+      image: "../../src/assets/profilepics/Ekram Yenus.png",
       linkedin: "https://www.linkedin.com/in/ekram-yenus-56410b387/",
       emblems: log_emblems
     },
     {
       name: "Het Patel",
       role: "Logistics Member",
-      image: "../../src/assets/profilepics/Gauri Khanolkar.jpeg",
+      image: "../../src/assets/profilepics/Het Patel.png",
       linkedin: "https://www.linkedin.com/in/het-patel-168684388/",
       emblems: log_emblems
     },
@@ -252,7 +252,7 @@ export default function Team() {
       name: "Stephanie Hermosillo",
       role: "Outreach Member",
       image: "../../src/assets/profilepics/unknown.jpg",
-      linkedin: "https://www.linkedin.com/company/capture-the-flame/",
+      linkedin: "https://www.linkedin.com/in/stephanie-hermosillo-465000244/",
       emblems: outreach_emblems
     },
     { 
@@ -301,6 +301,45 @@ export default function Team() {
     },
   ]
 
+  const expPlusMembers = [
+    {
+      name: "Aukovien",
+      role: "Experience++",
+      pfp: "../../src/assets/profilepics/Aukovien.png",
+      linkedin: "https://www.linkedin.com/in/anarenkhzol/",
+    },
+    {
+      name: "Derick Johnson",
+      role: "Experience++",
+      pfp: "../../src/assets/profilepics/Derick Johnson.jpeg",
+      linkedin: "https://www.linkedin.com/in/derick-m-johnson/",
+    },
+    {
+      name: "Lei Chen",
+      role: "Experience++",
+      pfp: "../../src/assets/profilepics/Lei Chen.jpeg",
+      linkedin: "https://www.linkedin.com/in/lei-chen-uic/",
+    },
+    {
+      name: "Lily Gross",
+      role: "Experience++",
+      pfp: "../../src/assets/profilepics/Lily Gross.jpeg",
+      linkedin: "https://www.linkedin.com/in/lily-gross-lbg/",
+    },
+    {
+      name: "J Benitez",
+      role: "Experience++",
+      pfp: "../../src/assets/profilepics/J Benitez.jpeg",
+      linkedin: "https://www.linkedin.com/in/jbenit17/",
+    },
+    {
+      name: "Nefeli Georgilas",
+      role: "Experience++",
+      pfp: "../../src/assets/profilepics/Nefeli Georgilas.png",
+      linkedin: "https://www.linkedin.com/in/nefeli-georgilas/",
+    },
+  ]
+
   return(
     <section className="team-section" id="team">
       <h2>Meet The Team</h2> 
@@ -332,7 +371,7 @@ export default function Team() {
         <div className="team-grid com-grid com-grid-scroll">
           {commsMembers.map((member, index) => (
             <a 
-              key={index}x
+              key={index}
               href={member.linkedin} 
               target="_blank" 
               rel="noopener noreferrer"
@@ -355,7 +394,7 @@ export default function Team() {
         <div className="team-grid exp-grid exp-grid-scroll">
           {expMembers.map((member, index) => (
             <a 
-              key={index}x
+              key={index}
               href={member.linkedin} 
               target="_blank" 
               rel="noopener noreferrer"
@@ -378,7 +417,7 @@ export default function Team() {
         <div className="team-grid log-grid log-grid-scroll">
           {logMembers.map((member, index) => (
             <a 
-              key={index}x
+              key={index}
               href={member.linkedin} 
               target="_blank" 
               rel="noopener noreferrer"
@@ -401,7 +440,7 @@ export default function Team() {
         <div className="team-grid out-grid out-grid-scroll">
           {outreachMembers.map((member, index) => (
             <a 
-              key={index}x
+              key={index}
               href={member.linkedin} 
               target="_blank" 
               rel="noopener noreferrer"
@@ -424,7 +463,7 @@ export default function Team() {
         <div className="team-grid web-grid web-grid-scroll">
           {webdevMembers.map((member, index) => (
             <a 
-              key={index}x
+              key={index}
               href={member.linkedin} 
               target="_blank" 
               rel="noopener noreferrer"
@@ -436,6 +475,30 @@ export default function Team() {
                 <img src={member.image} alt={member.name} className="team-image hover" />
               </div>
               <div className="team-info">
+                <h3>{member.name}</h3>
+                <p>{member.role}</p>
+              </div>  
+            </a>
+          ))}
+        </div>
+      </div>
+      <div className="special-thanks">
+        <h4>Special Thanks</h4>
+      </div>
+      <div className="team-row">
+        <div className="team-grid">
+          {expPlusMembers.map((member, index) => (
+            <a 
+              key={index}
+              href={member.linkedin} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="name-card"
+            >
+              <div className="team-info special">
+                {member.pfp && (
+                  <img className="team-pfp" src={member.pfp} alt={member.name} />
+                )}
                 <h3>{member.name}</h3>
                 <p>{member.role}</p>
               </div>  

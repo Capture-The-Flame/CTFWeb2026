@@ -220,7 +220,60 @@ footer > h1 {
   .cloud-btn { top: clamp(30px, 35px, 30px); }
   .cloud-btn img { width: clamp(100px, 70px, 110px); }
   .cloud-label { font-size: clamp(0.8rem, 2.2vw, 2rem); }
-  .slide--endPath {
-    overflow: visible;
+}
+
+.overlay-card--team {
+  pointer-events: auto;
+  width: min(1300px, 92vw);
+  max-width: 92vw;
+  overflow: visible;
+  position: absolute;
+}
+
+.slide--stone {
+  position: relative;
+  overflow: visible;
+}
+
+@media (max-width: 350px) {
+  .slide--stone {
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 350px) {
+  .hide-abv-350px {
+      display: none;
+  }
+}
+
+@media (min-width: 400px) {
+  .hide-abv-400px {
+      display: none;
+  }
+}
+
+@media (min-width: 450px) {
+  .hide-abv-450px {
+      display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .hide-abv-600px {
+      display: none;
+  }
+}
+
+@media (min-width: 700px) {
+  .hide-abv-700px {
+      display: none;
+  }
+}
+
+@media (min-width: 1025px) {
+  .hide-abv-1025px {
+      display: none;
   }
 }
