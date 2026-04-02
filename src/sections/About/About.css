@@ -3,10 +3,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  
 
   text-align: center;
-  padding: 2rem 2rem;
+  padding: 4rem 4.5rem;
 
   font-family: "fellEnglish", monospace;
   color: #2b1d0e;
@@ -14,17 +14,17 @@
 
 /* Title */
 .about-title {
-  font-size: clamp(1.2rem, 4vw, 1.5rem);
+  font-size: clamp(1.5rem, 4vw, 1.7rem);
   margin: 0 0 0 0;
   line-height: 0;
 }
 
-/* Paragraphs */
-.about p {
+/* Paragraph */
+.about-text {
   font-size: clamp(0.8rem, 1.6vw, 1.2rem);
   line-height: 1.5;
   margin-bottom: 3rem;
-  max-width: 75ch;
+  max-width: 65ch;
 }
 
 /* Mobile */
@@ -36,9 +36,9 @@
   .about-title {
     margin: -0.8rem 0 0 0;
   }
-  .about p {
+  .about-text {
     font-size: 0.7rem;
-    line-height: 1;
+    line-height: 1.1;
   }
 
 }
