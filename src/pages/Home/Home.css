@@ -243,6 +243,10 @@ html, body, #root {
   }
 }
 
+.mobile-scroll-wrap {
+  display: none;
+}
+
 footer {
   background: linear-gradient(to bottom, #463c5d, black);
   /* background-color: black; */
@@ -271,6 +275,34 @@ footer > h1 {
   .cloud-btn { top: clamp(30px, 35px, 30px); }
   .cloud-btn img { width: clamp(100px, 70px, 110px); }
   .cloud-label { font-size: clamp(0.8rem, 2.2vw, 2rem); }
+  .slide--home::after { display: none; }
+  .anchor--seam,
+  .overlay--about,
+  .overlay--about .overlay-card,
+  .overlay--about .overlay-card--full {
+    overflow: visible;
+  }
+
+  .mobile-scroll-wrap {
+    display: block;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    line-height: 0;
+
+    margin-top: -6vw;
+    margin-bottom: -45vw; /* increase this until gap disappears */
+  }
+
+  .mobile-scroll {
+    display: block;
+    width: 100vw;
+    height: auto;
+    margin: 0 auto;
+
+    transform: scaleY(0.60);
+    transform-origin: top center;
+  }
 }
 
 .overlay-card--team {

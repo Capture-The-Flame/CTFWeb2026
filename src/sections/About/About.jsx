@@ -5,7 +5,7 @@ export default function About() {
     <section className="about">
       <h2 className="about-title">About</h2>
       <p className="about-text">
-        Get ready for another Capture The Flag (CTF) competition happening April 11, 2026 at UIC! Open to students across the city, this in-person event is designed to challenge and inspire cybersecurity enthusiasts of all skill levels. Participants can compete in beginner and advanced tracks, enjoy food and refreshments, and take advantage of professional growth opportunities through workshops, networking, and an insightful keynote from a top cybersecurity expert.
+        Capture the Flame is a student-led, intercollegiate cybersecurity Capture the Flag (CTF) competition at the University of Illinois Chicago, hosted in collaboration with the College of Engineering. Now in its second year, Capture the Flame is designed to introduce students to cybersecurity through hands-on, themed challenges where they build practical skills, collaborate with peers, and apply real-world concepts while competing for exciting prizes.
       </p>
     </section>
   );

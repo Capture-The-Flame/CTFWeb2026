@@ -11,6 +11,7 @@ import cloud from "../../assets/pieces/ctf_cloud.svg";
 import scroll from "../../assets/pieces/scroll.svg";
 import bunting from "../../assets/pieces/sponsors_banner.svg";
 import logo from "../../assets/pieces/CTF_Logo_Horizontal_Webpage.svg";
+import mobileScroll from "../../assets/pieces/about_paper.svg";
 
 
 
@@ -47,6 +48,10 @@ export default function Home() {
                     <span className="cloud-label">Cyberpack</span>
                 </a>
             </section>
+
+            <div className="mobile-scroll-wrap" aria-hidden="true">
+                <img src={mobileScroll} alt="mobile-scroll" className="mobile-scroll"/>
+            </div>
 
             {/* About Anchor */}
             <div id="about" className="anchor anchor--seam">

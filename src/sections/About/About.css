@@ -1,13 +1,11 @@
 .about {
   width: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-
   text-align: center;
   padding: 4rem 4.5rem;
-
   font-family: "fellEnglish", monospace;
   color: #2b1d0e;
 }
@@ -30,8 +28,10 @@
 /* Mobile */
 @media (max-width: 768px) {
   .about {
+    box-sizing: border-box;
     margin: -1rem 0 0 0;
-    padding: 2.5rem 1rem;
+    padding: 2.9rem 1rem;
+    margin-top: -47vw;
   }
   .about-title {
     margin: -0.8rem 0 0 0;
