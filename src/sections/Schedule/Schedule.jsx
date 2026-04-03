@@ -206,7 +206,7 @@ export default function Schedule() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const isMobile = screenWidth <= 200;
+  const isMobile = screenWidth <= 500;
 
   return (
     <div className="schedule-scene">
