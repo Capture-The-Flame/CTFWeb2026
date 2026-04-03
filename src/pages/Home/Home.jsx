@@ -137,8 +137,10 @@ export default function Home() {
             
             <footer className="footer">
                 <img src={wicys} className="footer-logo wicys" />
-                <h1>University of Illinois Chicago</h1>
-                <h1>Capture the Flame</h1>
+                <div className="footer-text">
+                    <h1>University of Illinois Chicago</h1>
+                    <h1>Capture the Flame</h1>
+                </div>
                 <img src={logica} className="footer-logo logica" />
             </footer>
         </div>

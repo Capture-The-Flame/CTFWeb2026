@@ -325,6 +325,17 @@ footer {
   border: 0;
 }
 
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: white;
+  font-size: 0.5rem;
+  font-family: "fellEnglish";
+  align-self: center;
+}
+
 footer > h1 {
   color: white;
   font-size: 1rem;

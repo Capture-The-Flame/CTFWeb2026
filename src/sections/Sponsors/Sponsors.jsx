@@ -7,8 +7,8 @@ import sansLogo from "../../assets/pieces/SANS.png";
 
 const sponsors = [
   { id: 1, name: "Comptia", logo: comptiaLogo, scaleX: 0.45, scaleY: 0.6 },
-  { id: 2, name: "Zebra", logo: zebraLogo, scaleX: 0.6, scaleY: 0.6 },
-  { id: 3, name: "SANS", logo: sansLogo, scaleX: 0.55, scaleY: 0.45 },
+  { id: 2, name: "Zebra", logo: zebraLogo, scaleX: 0.55, scaleY: 0.55 },
+  { id: 3, name: "SANS", logo: sansLogo, scaleX: 0.4, scaleY: 0.45 },
 ];
 
 export default function Sponsors() {
