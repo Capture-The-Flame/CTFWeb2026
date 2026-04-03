@@ -182,7 +182,7 @@ const scheduleCharacters = [
   //   mobileShadowLeft: "50%" }
 ];
 
-export default function Schedule() {
+export default function Schedule({ onOpen, onClose }) {
   const [activeCharacter, setActiveCharacter] = useState(null); 
 
   const [openIndex, setOpenIndex] = useState(null);
@@ -198,6 +198,12 @@ export default function Schedule() {
     console.log("Opened popup for " + char.label);
     setActiveCharacter(char);
     setOpenIndex(null); 
+    onOpen?.()
+  };
+
+  const closeModal = () => {
+    setActiveCharacter(null);
+    onClose?.();         // ← add this
   };
 
   useEffect(() => {
@@ -257,9 +263,9 @@ export default function Schedule() {
       ))}
 
       {activeCharacter && ( 
-        <div className="modal-overlay" onClick={() => setActiveCharacter(null)}>
+        <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="modal-close" onClick={() => setActiveCharacter(null)}>
+            <button className="modal-close" onClick={closeModal}>
               X
             </button>
             <img src={StoneTablet} alt="Schedule Board" className="modal-bg-svg" />
