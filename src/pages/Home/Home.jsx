@@ -1,4 +1,5 @@
 import "./Home.css"
+import { useState } from "react";
 import home from "../../assets/backgroundArt/ctf_city_skyline_ALT.svg";
 import begPath from "../../assets/backgroundArt/CTF_Background_PathwayTop_Final.svg";
 import midPath from "../../assets/backgroundArt/CTF_Background_PathwayMiddle_Final.svg";
@@ -12,6 +13,8 @@ import scroll from "../../assets/pieces/scroll.svg";
 import bunting from "../../assets/pieces/sponsors_banner.svg";
 import logo from "../../assets/pieces/CTF_Logo_Horizontal_Webpage.svg";
 import mobileScroll from "../../assets/pieces/about_paper.svg";
+import logica from "../../assets/pieces/logica_logo.png";
+import wicys from "../../assets/pieces/wicys_logo.png"
 
 
 
@@ -23,6 +26,8 @@ import Team from "../../sections/Team/Team.jsx";
 import SocialMedia from "../../sections/SocialMedia/SocialMedia.jsx";
 
 export default function Home() {
+    const [activeOverlay, setActiveOverlay] = useState(null); // 'schedule' | 'faq' | null
+
     return (
         <div className="home">
 
@@ -31,7 +36,7 @@ export default function Home() {
                 <img src={logo} alt="logo" className="logo"/>
 
                 <a 
-                    href="#register"
+                    href="https://luma.com/gahbzqu6"
                     className="cloud-btn cloud-btn--left"
                     aria-label="Register"
                 >
@@ -40,7 +45,7 @@ export default function Home() {
                 </a>
 
                 <a 
-                    href="#cyberpack"
+                    href="https://dolomite-milkshake-eae.notion.site/Capture-The-Flame-317487455f7b80aeb22cd592199ea7cf"
                     className="cloud-btn cloud-btn--right"
                     aria-label="cyberpack"
                 >
@@ -60,22 +65,28 @@ export default function Home() {
                 </div>
             </section>
             
-            <section id="schedule" className="slide slide--begPath">
+            <section id="schedule" className="slide slide--begPath" style={{ zIndex: activeOverlay === 'schedule' ? 30 : 5 }}>
                 <img src={begPath} alt="top path" className="slide-art"/>
 
                 <div className="overlay overlay--schedule">
                     <div className="overlay-card overlay-card--full">
-                        <Schedule />
+                        <Schedule 
+                            onOpen={() => setActiveOverlay('schedule')}
+                            onClose={() => setActiveOverlay(null)}
+                        />
                     </div>
                 </div>
             </section>
 
-            <section id="faq" className="slide slide--midPath">
+            <section id="faq" className="slide slide--midPath" style={{ zIndex: activeOverlay === 'schedule' ? 9 : 10 }}>
                 <img src={midPath} alt="mid path" className="slide-art"/>
 
                 <div className="overlay overlay--faq">
                     <div className="overlay-card">
-                        <FAQ />
+                        <FAQ 
+                            onOpen={() => setActiveOverlay('faq')}
+                            onClose={() => setActiveOverlay(null)}
+                        />
                     </div>
                 </div>
             </section>
@@ -134,7 +145,12 @@ export default function Home() {
             </section>
             
             <footer className="footer">
-                <h1> University of Illinois Capture the Flag</h1>
+                <img src={wicys} className="footer-logo wicys" />
+                <div className="footer-text">
+                    <h1>University of Illinois Chicago</h1>
+                    <h1>Capture the Flame</h1>
+                </div>
+                <img src={logica} className="footer-logo logica" />
             </footer>
         </div>
     )

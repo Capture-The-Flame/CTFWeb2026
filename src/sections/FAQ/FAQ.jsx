@@ -114,7 +114,7 @@ const SMALL_BOARD_PAGES = [
 ];
 
 
-export default function FAQ() {
+export default function FAQ({ onOpen, onClose }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [openBoard, setOpenBoard] = useState(false);
   const [openPage, setOpenPage] = useState(null);
@@ -126,13 +126,13 @@ export default function FAQ() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const handleClose = () => { setOpenBoard(false); setOpenPage(null); };
+  const handleClose = () => { setOpenBoard(false); setOpenPage(null); onClose?.();};
 
   return (
     <div className="faq-main-wrapper">
       {/* small board */}
       <div className="board-container">
-        <div className="board-small-frame" onClick={() => setOpenBoard(true)}>
+        <div className="board-small-frame" onClick={() => {setOpenBoard(true); onOpen?.();} }>
           <img src={noticeBoard} className="board-small" alt="FAQ Board" />
           <div className="board-small-overlay">
             {SMALL_BOARD_PAGES.map((page, index) => (
