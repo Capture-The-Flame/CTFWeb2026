@@ -6,7 +6,6 @@
   align-items: center;
   text-align: center;
   padding-top: 31vw;
-  font-family: "fellEnglish", monospace;
   color: #2b1d0e;
   margin: 0;
 }
@@ -31,15 +30,16 @@
   }
 
   .about {
-    padding: 0 1rem;
+    padding-top: clamp(2px, 5vw, 10px);
   }
 
   .about-title {
     margin: 0 0 0.75rem 0;
+    font-size: clamp(1.25rem, 1.7vw, 1.75rem);
   }
 
   .about-text {
-    font-size: clamp(1.rem, 1.7vw, 1.75rem);
+    font-size: clamp(1.0rem, 1.7vw, 1.75rem);
     line-height: 1.8;
   }
 }

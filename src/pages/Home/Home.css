@@ -300,9 +300,14 @@ footer > h1 {
   align-self: center;
 }
 
-@media (min-width: 400px) and (max-width: 1200px) {
-  .cloud-btn { top: clamp(80px, 35px, 60px); }
-  .cloud-btn img { width: clamp(130px, 70px, 200px); }
+@media (min-width: 500px) and (max-width: 1200px) {
+  .cloud-btn {
+    top: clamp(10px, 8vw, 80px) !important;
+  }
+
+  .cloud-btn img {
+    width: clamp(120px, 18vw, 300px);
+  }
   .mobile-scroll {
     transform: scaleY(0.38) !important;
     transform-origin: top center;
