@@ -95,7 +95,12 @@ const scheduleCharacters = [
     label: "Hey!",
     src: char1,
     x: 20,
-    y: 20,
+    y: 30,
+
+    mobileX: 15,
+    mobileY: 15,
+    mobileSize: "9%",
+
     // width: "clamp(40px, 8vw, 100px)",
     size: "7%",
     flip: true,
@@ -112,7 +117,9 @@ const scheduleCharacters = [
     
 
   { id: 2, label: "Click on us for the schedule!", src: char2, 
-    x: 67, y: 66, size: "9%",
+    x: 67, y: 80, size: "9%",
+
+    mobileX: 70, mobileY: 75, mobileSize: "10%",
     shadowBottom: "-2px", 
     shadowWidth: "90%",     
     shadowLeft: "43%",
@@ -145,8 +152,11 @@ const scheduleCharacters = [
   //   mobileShadowLeft: "60%"},
 
   { id: 4, label: "Welcome to CTF!", src: char4, 
-    x: 53, y: 43,
+    x: 53, y: 55,
     size: "15%",
+
+    mobileX: 50, mobileY: 43, 
+    mobileSize: "18%",
     rotate: "90deg",
     shadowBottom: "-25px", 
     shadowWidth: "50%",     
@@ -196,8 +206,7 @@ export default function Schedule() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const isMobile = screenWidth <= 768;
-  const isMidDesktop = screenWidth > 768 && screenWidth <= 1400;
+  const isMobile = screenWidth <= 200;
 
   return (
     <div className="schedule-scene">
@@ -206,9 +215,33 @@ export default function Schedule() {
           key={char.id} 
           className="char-btn"
         style={{
-          "--char-x": `${char.x}%`,
-          "--char-y": `${char.y}%`,
-          "--char-size": char.size,
+          "--char-x": `${(isMobile ? (char.mobileX ?? char.x) : char.x)}%`,
+          "--char-y": `${(isMobile ? (char.mobileY ?? char.y) : char.y)}%`,
+          "--char-size": isMobile ? (char.mobileSize ?? char.size) : char.size,
+
+          "--shadow-bottom": char.shadowBottom || "-10px",
+          "--shadow-width": char.shadowWidth || "60%",
+          "--shadow-left": char.shadowLeft || "50%",
+
+          "--mobile-shadow-bottom": char.mobileShadowBottom || char.shadowBottom || "-10px",
+          "--mobile-shadow-width": char.mobileShadowWidth || char.shadowWidth || "60%",
+          "--mobile-shadow-left": char.mobileShadowLeft || char.shadowLeft || "50%",
+
+          "--label-top": isMobile
+            ? (char.mobileLabelTop || char.labelTop || "12%")
+            : (char.labelTop || "12%"),
+
+          "--label-left": isMobile
+            ? (char.mobileLabelLeft || char.labelLeft || "50%")
+            : (char.labelLeft || "50%"),
+
+          "--label-shift-x": isMobile
+            ? (char.mobileLabelShiftX || char.labelShiftX || "-50%")
+            : (char.labelShiftX || "-50%"),
+
+          "--label-shift-y": isMobile
+            ? (char.mobileLabelShiftY || char.labelShiftY || "-100%")
+            : (char.labelShiftY || "-100%"),
         }}
           aria-label={`View schedule for ${char.label}`}
           onClick={() => openModal(char)}
