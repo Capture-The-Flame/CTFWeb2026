@@ -166,6 +166,14 @@ html, body, #root {
   inset: 0;
 }
 
+.slide--dragon {
+  overflow: visible;
+}
+
+.overlay--socials .overlay-card {
+  overflow: visible;
+}
+
 .bunting {
   position: absolute;
   top: 0;
@@ -317,7 +325,65 @@ footer > h1 {
   align-self: center;
 }
 
-@media (min-width: 500px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1450px) {
+  .cloud-btn {
+    top: clamp(10px, 8vw, 80px) !important;
+  }
+
+  .cloud-btn img {
+    width: clamp(120px, 18vw, 300px);
+  }
+  .mobile-scroll {
+    transform: scaleY(0.25) !important;
+    transform-origin: top center;
+  }
+
+  .mobile-scroll-wrap {
+    margin-top: -5vw !important;
+    margin-bottom: -70vw !important;
+  }
+}
+
+
+@media (min-width: 901px) and (max-width: 1099px) {
+  .cloud-btn {
+    top: clamp(10px, 8vw, 80px) !important;
+  }
+
+  .cloud-btn img {
+    width: clamp(120px, 18vw, 300px);
+  }
+  .mobile-scroll {
+    transform: scaleY(0.3) !important;
+    transform-origin: top center;
+  }
+
+  .mobile-scroll-wrap {
+    margin-top: -5vw !important;
+    margin-bottom: -70vw !important;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 900px) {
+  .overlay--about {
+    padding-top: 4vw;
+  }
+
+  .about {
+    padding-top: clamp(0px, 2vw, 6px);
+  }
+
+  .about-title {
+    font-size: clamp(0.95rem, 2.4vw, 1.2rem);
+  }
+
+  .about-text {
+    font-size: clamp(1.0rem, 1.35vw, 1.35rem);
+    line-height: 1.45;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 849px) {
   .cloud-btn {
     top: clamp(10px, 8vw, 80px) !important;
   }

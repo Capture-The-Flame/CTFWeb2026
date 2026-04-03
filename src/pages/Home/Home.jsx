@@ -31,7 +31,7 @@ export default function Home() {
                 <img src={logo} alt="logo" className="logo"/>
 
                 <a 
-                    href="#register"
+                    href="https://luma.com/gahbzqu6"
                     className="cloud-btn cloud-btn--left"
                     aria-label="Register"
                 >
@@ -40,7 +40,7 @@ export default function Home() {
                 </a>
 
                 <a 
-                    href="#cyberpack"
+                    href="https://dolomite-milkshake-eae.notion.site/Capture-The-Flame-317487455f7b80aeb22cd592199ea7cf"
                     className="cloud-btn cloud-btn--right"
                     aria-label="cyberpack"
                 >
