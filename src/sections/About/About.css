@@ -39,7 +39,7 @@
   }
 
   .about-text {
-    font-size: clamp(1.25rem, 3.0vw, 1.75rem);
+    font-size: clamp(1.25rem, 1.0vw, 1.30rem);
     line-height: 1.5;
   }
 }

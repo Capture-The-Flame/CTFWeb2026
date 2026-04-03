@@ -94,8 +94,8 @@ const scheduleCharacters = [
   { id: 1,
     label: "Hey!",
     src: char1,
-    x: 20,
-    y: 30,
+    x: 8,
+    y: 35,
 
     mobileX: 15,
     mobileY: 15,
