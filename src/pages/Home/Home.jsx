@@ -12,6 +12,8 @@ import scroll from "../../assets/pieces/scroll.svg";
 import bunting from "../../assets/pieces/sponsors_banner.svg";
 import logo from "../../assets/pieces/CTF_Logo_Horizontal_Webpage.svg";
 import mobileScroll from "../../assets/pieces/about_paper.svg";
+import logica from "../../assets/pieces/logica_logo.png";
+import wicys from "../../assets/pieces/wicys_logo.png"
 
 
 
@@ -133,7 +135,9 @@ export default function Home() {
             </section>
             
             <footer className="footer">
-                <h1> University of Illinois Capture the Flag</h1>
+                <img src={wicys} className="footer-logo wicys" />
+                <h1>University of Illinois Capture the Flame</h1>
+                <img src={logica} className="footer-logo logica" />
             </footer>
         </div>
     )
