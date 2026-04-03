@@ -414,7 +414,7 @@ export default function Team() {
         </div>
       </div>
       <div className="team-row log-row log-row-scroll">
-        <div className="team-grid log-grid log-grid-scroll">
+        <div className="team-grid log-grid-scroll">
           {logMembers.map((member, index) => (
             <a 
               key={index}
@@ -485,8 +485,8 @@ export default function Team() {
       <div className="special-thanks">
         <h4>Special Thanks</h4>
       </div>
-      <div className="team-row">
-        <div className="team-grid">
+      <div className="team-row expplus-row expplus-row-scroll">
+        <div className="team-grid expplus-grid-scroll">
           {expPlusMembers.map((member, index) => (
             <a 
               key={index}

@@ -51,16 +51,17 @@ export default function Home() {
                 </a>
             </section>
 
-            <div className="mobile-scroll-wrap" id="about">
-                <img src={mobileScroll} alt="mobile-scroll" className="mobile-scroll" />
-
-                <div className="overlay overlay--about">
-                    <div className="overlay-card overlay-card--full">
-                    <About />
+            <section id="about" className="slide slide--about">
+                <div className="mobile-scroll-wrap">
+                    <img src={mobileScroll} alt="mobile-scroll" className="mobile-scroll" />
+                    <div className="overlay overlay--about">
+                        <div className="overlay-card overlay-card--full">
+                            <About />
+                        </div>
                     </div>
                 </div>
-            </div>
-
+            </section>
+            
             <section id="schedule" className="slide slide--begPath">
                 <img src={begPath} alt="top path" className="slide-art"/>
 

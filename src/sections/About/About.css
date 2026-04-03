@@ -7,71 +7,89 @@
   text-align: center;
   color: #2b1d0e;
   margin: 0;
-  padding-top: clamp(8px, 2vw, 32px);
-  padding-inline: clamp(12px, 3vw, 24px);
+  padding-top: 2px;
 }
 
 .about-title {
-  margin: 0 0 clamp(0.35rem, 1vw, 0.75rem) 0;
+  font-size: clamp(1.5rem, 4vw, 1.7rem);
+  margin: -0.1rem 0 0.1rem 0;
   line-height: 1.1;
-  font-size: clamp(1.05rem, 2.2vw, 1.7rem);
+  padding-bottom: 1rem;
 }
 
 .about-text {
   margin: 0;
-  max-width: 42ch;
-  line-height: 1.45;
-  font-size: clamp(0.72rem, 1.25vw, 1.08rem);
+  max-width: 65ch;
+  padding: 0.5vw 5vw 0.5vw 5vw;
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
 
-/* large desktop */
-@media (min-width: 1400px) {
-  .about {
-    padding-top: 18px;
-  }
-
+@media (min-width: 1201px) and (max-width: 1350px) {
   .about-text {
-    max-width: 44ch;
+    font-size: 1.25rem;
+    line-height: 1.5;
   }
 }
-
-/* tablet / small laptop */
-@media (max-width: 900px) {
-  .about {
-    padding-top: 10px;
-  }
-
-  .about-title {
-    font-size: clamp(1rem, 2.8vw, 1.4rem);
-  }
-
-  .about-text {
-    font-size: clamp(0.78rem, 1.8vw, 1rem);
-    line-height: 1.4;
-    max-width: 38ch;
-  }
-}
-
-/* mobile */
-@media (max-width: 600px) {
+/* for mobile */
+@media (min-width: 501px) and (max-width: 1200px) {
   .overlay--about {
     place-items: start center;
-    padding-top: 6vw;
+    padding-top: 3vw;
   }
 
   .about {
-    padding-top: 4px;
-    padding-inline: 1rem;
+    padding: clamp(2vw, 5vw, 10px) 2vw;
   }
 
   .about-title {
-    font-size: 1rem;
-    margin-bottom: 0.45rem;
+    margin: 0 0 0.5rem 0;
+    padding-bottom: 1rem;
+    line-height: 1.2;
   }
 
   .about-text {
-    font-size: 0.78rem;
-    line-height: 1.35;
-    max-width: 30ch;
+    line-height: 1.5;
+  }
+}
+
+/* for phone */
+@media (max-width: 500px) {
+  .overlay--about {
+    place-items: start center;
+    padding-top: 0;
+  }
+
+  .about {
+    padding: 1rem 1rem;
+  }
+
+  .about-title {
+    font-size: clamp(1rem, 5vw, 10rem);
+    margin: 0.8rem 0 0.8rem 0;
+    line-height: 1;
+  }
+
+  .about-text {
+    font-size: clamp(2px, 5vw, 10px);
+    line-height: 1.1;
+  }
+}
+
+/* for smaller phone */
+@media (max-width: 360px) {
+  .about {
+    padding: 0.5rem 0.2rem;
+  }
+
+  .about-title {
+    font-size: clamp(1rem, 5vw, 10rem);
+    margin: 0.25rem 0 -0.25rem 0;
+    line-height: 1;
+  }
+
+  .about-text {
+    font-size: clamp(2px, 5vw, 10px);
+    line-height: 1.1;
   }
 }
