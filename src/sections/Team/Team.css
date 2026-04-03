@@ -147,10 +147,6 @@
         display: none;           
     }
   
-    .exp-card-scroll {
-        flex-shrink: 0;       
-    }
-  
     .exp-row-scroll {
         overflow: hidden;  
         -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 85%, transparent 100%);
@@ -170,10 +166,6 @@
   
     .out-grid-scroll::-webkit-scrollbar {
         display: none;           
-    }
-  
-    .out-card-scroll {
-        flex-shrink: 0;       
     }
   
     .out-row-scroll {
@@ -212,10 +204,6 @@
         display: none;           
     }
   
-    .log-card-scroll {
-        flex-shrink: 0;       
-    }
-  
     .log-row-scroll {
         overflow: hidden;  
         -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 85%, transparent 100%);
@@ -239,10 +227,6 @@
   
     .com-grid-scroll::-webkit-scrollbar {
         display: none;           
-    }
-  
-    .com-card-scroll {
-        flex-shrink: 0;       
     }
   
     .com-row-scroll {
@@ -279,10 +263,6 @@
         -webkit-overflow-scrolling: touch;
         scrollbar-width: thin;
         scroll-behavior: smooth;
-    }
-
-    .web-card-scroll {
-        flex-shrink: 0;       
     }
   
     .web-row-scroll {
@@ -361,4 +341,26 @@
 
 .right {
     left: 97%;
+}
+
+@media (max-width: 1230px) {
+    .expplus-grid-scroll {
+        padding: 20px 40px 20px 40px;
+        flex-wrap: nowrap;       
+        overflow-x: auto;    
+        justify-content: flex-start;   
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+        scroll-behavior: smooth;
+    }
+  
+    .expplus-grid-scroll::-webkit-scrollbar {
+        display: none;           
+    }
+  
+    .expplus-row-scroll {
+        overflow: hidden;  
+        -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 85%, transparent 100%);
+        mask-image: linear-gradient(to right, transparent 0%, black 8%,  black 85%, transparent 100%); 
+    }
 }
