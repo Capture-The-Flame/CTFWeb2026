@@ -284,7 +284,6 @@ html, body, #root {
 .slide--about {
   position: relative;
   overflow: visible;
-  z-index: 3; /* so it bleeds over top + bottom */
   line-height: 0;
 }
 
@@ -295,15 +294,16 @@ html, body, #root {
   margin: 0 auto;
 
   transform: scaleY(0.25);
+  pointer-events: none;
 }
 
 .mobile-scroll-wrap {
   display: block;
   position: relative;
-  z-index: 3;
+  z-index: 6;
   width: 100%;
   line-height: 0;
-
+  pointer-events: none;
   margin-top: -5vw;
   margin-bottom: -5vw;
 }
@@ -387,7 +387,7 @@ footer > h1 {
 
   .mobile-scroll-wrap {
     margin-top: -5vw !important;
-    margin-bottom: -70vw !important;
+    margin-bottom: -65vw !important;
   }
 }
 
@@ -431,7 +431,7 @@ footer > h1 {
 
   .mobile-scroll-wrap {
     margin-top: -2vw !important;
-    margin-bottom: -50vw !important; /* increase this until gap disappears */
+    margin-bottom: -45vw !important; /* increase this until gap disappears */
   }
 
   .mobile-scroll {
