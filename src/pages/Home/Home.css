@@ -124,7 +124,7 @@ html, body, #root {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 8vw;
+  padding-top: 5vw;
   pointer-events: none;
 }
 
@@ -276,6 +276,13 @@ html, body, #root {
   }
 }
 
+.slide--about {
+  position: relative;
+  overflow: visible;
+  z-index: 3; /* so it bleeds over top + bottom */
+  line-height: 0;
+}
+
 .mobile-scroll {
   display: block;
   width: 100vw;
@@ -288,12 +295,12 @@ html, body, #root {
 .mobile-scroll-wrap {
   display: block;
   position: relative;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
   line-height: 0;
 
-  margin-top: -40vw;
-  margin-bottom: -45vw;
+  margin-top: -5vw;
+  margin-bottom: -5vw;
 }
 
 footer {
@@ -353,23 +360,12 @@ footer > h1 {
   }
 
   .mobile-scroll-wrap {
-    display: block;
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    line-height: 0;
-
     margin-top: -2vw !important;
     margin-bottom: -50vw !important; /* increase this until gap disappears */
   }
 
   .mobile-scroll {
-    display: block;
-    width: 100vw;
-    height: auto;
-    margin: 0 auto;
-
-    transform: scaleY(0.50) !important; 
+    transform: scaleY(0.50) !important;
     transform-origin: top center;
   }
 }
@@ -427,5 +423,17 @@ footer > h1 {
 @media (min-width: 1025px) {
   .hide-abv-1025px {
       display: none;
+  }
+}
+
+/* for bigger screen */
+@media (min-width: 1200px) {
+  .mobile-scroll {
+    transform: scaleY(0.28);
+    transform-origin: top center;
+  }
+  .mobile-scroll-wrap {
+    margin-top: -5vw;
+    margin-bottom: -68vw;
   }
 }
