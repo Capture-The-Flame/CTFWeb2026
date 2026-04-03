@@ -8,7 +8,7 @@
     margin-bottom: 0px;
     font-size: x-large;
     color: #000000;
-    background-image: url('../../src/assets/pieces/nameplate.svg');
+    background-image: url('@/../src/assets/pieces/nameplate.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center 0px;
@@ -94,7 +94,7 @@
 .team-info {
     color: #000000;
     position: relative;
-    background-image: url('../../src/assets/pieces/nameplate2.svg');
+    background-image: url('@/../src/assets/pieces/nameplate2.svg');
     background-size: contain; 
     background-position: center;
     background-repeat: no-repeat;
@@ -303,7 +303,7 @@
 .special-thanks {
     color: #000000;
     position: relative;
-    background-image: url('../../src/assets/pieces/nameplate.svg');
+    background-image: url('@/../src/assets/pieces/nameplate.svg');
     background-size: contain; 
     background-position: center 0px;
     background-repeat: no-repeat;
