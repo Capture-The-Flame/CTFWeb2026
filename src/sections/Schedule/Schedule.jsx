@@ -91,11 +91,14 @@ const mainSchedule = [
 ];
 
 const scheduleCharacters = [ 
-  { id: 1, label: "Hey!", src: char1, 
-    top: "25%", left: "14%",
-    midTop: "18%", midLeft: "4%",
-    mobileTop: "1%", mobileLeft: "10%",
-    width: "clamp(40px, 8vw, 100px)", flip: true,
+  { id: 1,
+    label: "Hey!",
+    src: char1,
+    x: 20,
+    y: 20,
+    // width: "clamp(40px, 8vw, 100px)",
+    size: "7%",
+    flip: true,
     // custom Shadow Properties:
     shadowBottom: "-10px",  // height
     shadowWidth: "80%",     // width 
@@ -109,14 +112,10 @@ const scheduleCharacters = [
     
 
   { id: 2, label: "Click on us for the schedule!", src: char2, 
-    top: "80%", left: "65%",
-    midTop: "65%", midLeft: "65%",
-    mobileTop: "60%", mobileLeft: "73%",
-    width: "clamp(45px, 9vw, 130px)",
+    x: 67, y: 66, size: "9%",
     shadowBottom: "-2px", 
     shadowWidth: "90%",     
     shadowLeft: "43%",
-    flip: true,
   
     mobileShadowBottom: "-5px", 
     mobileShadowWidth: "90%",
@@ -146,10 +145,9 @@ const scheduleCharacters = [
   //   mobileShadowLeft: "60%"},
 
   { id: 4, label: "Welcome to CTF!", src: char4, 
-    top: "55%", left: "50%",
-    midTop: "37%", midLeft: "40%",
-    mobileTop: "20%", mobileLeft: "50%",
-    width: "clamp(92px, 14vw, 200px)", rotate: "90deg",
+    x: 53, y: 43,
+    size: "15%",
+    rotate: "90deg",
     shadowBottom: "-25px", 
     shadowWidth: "50%",     
     shadowLeft: "50%",
@@ -208,43 +206,9 @@ export default function Schedule() {
           key={char.id} 
           className="char-btn"
         style={{
-          '--desktop-top': isMobile
-            ? (char.mobileTop || char.top)
-            : isMidDesktop
-              ? (char.midTop || char.top)
-              : char.top,
-
-          '--desktop-left': isMobile
-            ? (char.mobileLeft || char.left)
-            : isMidDesktop
-              ? (char.midLeft || char.left)
-              : char.left,
-
-          '--shadow-bottom': char.shadowBottom || '-10px',
-          '--shadow-width': char.shadowWidth || '60%',
-          '--shadow-left': char.shadowLeft || '50%',
-
-          '--mobile-shadow-bottom': char.mobileShadowBottom || char.shadowBottom || '-10px',
-          '--mobile-shadow-width': char.mobileShadowWidth || char.shadowWidth || '60%',
-          '--mobile-shadow-left': char.mobileShadowLeft || char.shadowLeft || '50%',
-
-          '--label-top': isMobile
-            ? (char.mobileLabelTop || char.labelTop || '12%')
-            : (char.labelTop || '12%'),
-
-          '--label-left': isMobile
-            ? (char.mobileLabelLeft || char.labelLeft || '50%')
-            : (char.labelLeft || '50%'),
-
-          '--label-shift-x': isMobile
-            ? (char.mobileLabelShiftX || char.labelShiftX || '-50%')
-            : (char.labelShiftX || '-50%'),
-
-          '--label-shift-y': isMobile
-            ? (char.mobileLabelShiftY || char.labelShiftY || '-100%')
-            : (char.labelShiftY || '-100%'),
-
-          width: char.width,
+          "--char-x": `${char.x}%`,
+          "--char-y": `${char.y}%`,
+          "--char-size": char.size,
         }}
           aria-label={`View schedule for ${char.label}`}
           onClick={() => openModal(char)}
