@@ -6,19 +6,62 @@ import log_emblems from "../../assets/pieces/ctf_emblems_log.svg";
 import outreach_emblems from "../../assets/pieces/ctf_emblems_outreach.svg";
 import webdev_emblems from "../../assets/pieces/ctf_emblems_webdev.svg";
 
+import codaImg from "../../src/assets/profilepics/Coda Richmond.jpeg";
+import fatimaImg from "../../src/assets/profilepics/Fatima.jpeg";
+
+import charmiImg from "../../assets/profilepics/Charmi Sutariya.jpeg";
+import juliaImg from "../../assets/profilepics/Julia Bowman.jpeg";
+import mahiImg from "../../assets/profilepics/Mahi Patel.jpeg";
+import omImg from "../../assets/profilepics/Om Patel.png";
+import raimaImg from "../../assets/profilepics/Raima Chowdhury.jpeg";
+import sofiaImg from "../../assets/profilepics/Sofia Batala.jpeg";
+
+import eddieImg from "../../assets/profilepics/Eduardo Murillo.jpeg";
+import aleenaImg from "../../assets/profilepics/Aleena Mehmood.jpeg";
+import ammaniImg from "../../assets/profilepics/Ammani Khan.png";
+import aniImg from "../../assets/profilepics/Anirudh Yallapragada.jpeg";
+import claudiaImg from "../../assets/profilepics/Claudia Varnas.jpeg";
+import edoardoImg from "../../assets/profilepics/Edoardo Gennaretti.jpeg";
+import gauriImg from "../../assets/profilepics/Gauri Khanolkar.jpeg";
+import roseImg from "../../assets/profilepics/Rose Torres.jpeg";
+import sajaImg from "../../assets/profilepics/Saja Bushara.jpeg";
+import sammyImg from "../../assets/profilepics/Sammy Patel.jpeg";
+import sufiyanImg from "../../assets/profilepics/Sufiyan Shariff.jpeg";
+import teresaImg from "../../assets/profilepics/Teresa Chirayil.jpeg";
+
+import malikaImg from "../../assets/profilepics/Malika Syeda.jpeg";
+import samiraImg from "../../assets/profilepics/Samira Ali.jpeg";
+import cindyImg from "../../assets/profilepics/Cindy Rocha.jpeg";
+import ekramImg from "../../assets/profilepics/Ekram Yenus.png";
+import hetImg from "../../assets/profilepics/Het Patel.png";
+import simranImg from "../../assets/profilepics/Simran Ashraf.jpeg";
+import thereseImg from "../../assets/profilepics/Therese Magpayo.jpeg";
+
+import jasonImg from "@/../src/assets/profilepics/Jason Carmona.jpeg";
+import alanImg from "@/../src/assets/profilepics/unknown.jpg";
+import diegoImg from "@/../src/assets/profilepics/Diego Roa.jpeg";
+import jeffImg from "@/../src/assets/profilepics/Jeff Benesisto.jpeg";
+import lisetteImg from "@/../src/assets/profilepics/Lisette Castanon.jpeg";
+import nehaImg from "@/../src/assets/profilepics/Neha Kamat.jpeg";
+import stephanieImg from "@/../src/assets/profilepics/unknown.jpg";
+import zonaImg from "@/../src/assets/profilepics/Zona Noman.jpeg";
+
+import marthaImg from "@/../src/assets/profilepics/Martha Barraza.jpeg";
+import aashikaImg from "@/../src/assets/profilepics/Aashika Lilaramani.jpeg";
+
 export default function Team() {
   const directors = [
     {
       name: "Coda Richmond",
       role: "Co-Director",
-      image: "@/../src/assets/profilepics/Coda Richmond.jpeg",
+      image: codaImg,
       linkedin: "https://www.linkedin.com/in/coda-richmond/",
       emblems: director_emblems
     },
     {
       name: "Fatima Mora Garcia",
       role: "Co-Director",
-      image: "@/../src/assets/profilepics/Fatima.jpeg",
+      image: fatimaImg,
       linkedin: "https://www.linkedin.com/in/fatima-mora-garcia/",
       emblems: director_emblems
     }
@@ -27,42 +70,42 @@ export default function Team() {
     {
       name: "Charmi Sutariya",
       role: "Communications Lead",
-      image: "@/../src/assets/profilepics/Charmi Sutariya.jpeg",
+      image: charmiImg,
       linkedin: "https://www.linkedin.com/in/charmi-sutariya-9585932ab/",
       emblems: comms_emblems
     },
     {
       name: "Julia Bowman",
       role: "Communications Member",
-      image: "@/../src/assets/profilepics/Julia Bowman.jpeg",
+      image: juliaImg,
       linkedin: "https://www.linkedin.com/in/juliafbowman/",
       emblems: comms_emblems
     },
     {
       name: "Mahi Patel",
       role: "Communications Member",
-      image: "@/../src/assets/profilepics/Mahi Patel.jpeg",
+      image: mahiImg,
       linkedin: "https://www.linkedin.com/in/mahipatel0708/",
       emblems: comms_emblems
     },
     {
       name: "Om Patel",
       role: "Communications Member",
-      image: "@/../src/assets/profilepics/Om Patel.png",
+      image: omImg,
       linkedin: "https://www.linkedin.com/in/ompatel22/",
       emblems: comms_emblems
     },
     {
       name: "Raima Chowdhury",
       role: "Communications Member",
-      image: "@/../src/assets/profilepics/Raima Chowdhury.jpeg",
+      image: raimaImg,
       linkedin: "https://www.linkedin.com/in/raima-chowdhury-uic2027/",
       emblems: comms_emblems
     },
     {
       name: "Sofia Batala",
       role: "Communications Member",
-      image: "@/../src/assets/profilepics/Sofia Batala.jpeg",
+      image: sofiaImg,
       linkedin: "https://www.linkedin.com/in/batalasofia/",
       emblems: comms_emblems
     },
@@ -72,84 +115,84 @@ export default function Team() {
     {
       name: "Eduardo Murillo",
       role: "Experience Lead",
-      image: "@/../src/assets/profilepics/Eduardo Murillo.jpeg",
+      image: eddieImg,
       linkedin: "https://www.linkedin.com/in/eduardo-murillo1/",
       emblems: exp_emblems
     },
     {
       name: "Aleena Mehmood",
       role: "Experience Member",
-      image: "@/../src/assets/profilepics/Aleena Mehmood.jpeg",
+      image: aleenaImg,
       linkedin: "https://www.linkedin.com/in/aleena-mehmood/",
       emblems: exp_emblems
     },
     {
       name: "Ammani Khan",
       role: "Experience Member",
-      image: "@/../src/assets/profilepics/Ammani Khan.png",
+      image: ammaniImg,
       linkedin: "https://www.linkedin.com/in/ammanikhan/",
       emblems: exp_emblems
     },
     {
       name: "Anirudh Yallapragada",
       role: "Experience Member",
-      image: "@/../src/assets/profilepics/Anirudh Yallapragada.jpeg",
+      image: aniImg,
       linkedin: "https://www.linkedin.com/in/ayswe/",
       emblems: exp_emblems
     },
     {
       name: "Claudia Varnas",
       role: "Experience Member",
-      image: "@/../src/assets/profilepics/Claudia Varnas.jpeg",
+      image: claudiaImg,
       linkedin: "https://www.linkedin.com/in/claudia-varnas/",
       emblems: exp_emblems
     },
     {
       name: "Edoardo Gennaretti",
       role: "Experience Member",
-      image: "@/../src/assets/profilepics/Edoardo Gennaretti.jpeg",
+      image: edoardoImg,
       linkedin: "https://www.linkedin.com/in/edoardogennaretti/",
       emblems: exp_emblems
     },
     {
       name: "Gauri Khanolkar",
       role: "Experience Member",
-      image: "@/../src/assets/profilepics/Gauri Khanolkar.jpeg",
+      image: gauriImg,
       linkedin: "https://www.linkedin.com/in/gauri-khanolkar/",
       emblems: exp_emblems
     },
     {
       name: "Rose Torres",
       role: "Experience Member",
-      image: "@/../src/assets/profilepics/Rose Torres.jpeg",
+      image: roseImg,
       linkedin: "https://www.linkedin.com/in/roselyn-torres/",
       emblems: exp_emblems
     },
     {
       name: "Saja Bushara",
       role: "Experience Member",
-      image: "@/../src/assets/profilepics/Saja Bushara.jpeg",
+      image: sajaImg,
       linkedin: "https://www.linkedin.com/in/sajabushara/",
       emblems: exp_emblems
     },
     {
       name: "Sammy Patel",
       role: "Experience Member",
-      image: "@/../src/assets/profilepics/Sammy Patel.jpeg",
+      image: sammyImg,
       linkedin: "https://www.linkedin.com/in/saumilpatel06/",
       emblems: exp_emblems
     },
     {
       name: "Sufiyan Shariff",
       role: "Experience Member",
-      image: "@/../src/assets/profilepics/Sufiyan Shariff.jpeg",
+      image: sufiyanImg,
       linkedin: "https://www.linkedin.com/in/sufiyan-shariff-22354021a/",
       emblems: exp_emblems
     },
     {
       name: "Teresa Chirayil",
       role: "Experience Member",
-      image: "@/../src/assets/profilepics/Teresa Chirayil.jpeg",
+      image: teresaImg,
       linkedin: "https://www.linkedin.com/in/teresachirayil/",
       emblems: exp_emblems
     },
@@ -158,49 +201,49 @@ export default function Team() {
     {
       name: "Malika Syeda",
       role: "Co-Logistics Lead",
-      image: "@/../src/assets/profilepics/Malika Syeda.jpeg",
+      image: malikaImg,
       linkedin: "https://www.linkedin.com/in/malikarsyeda/",
       emblems: log_emblems
     },
     {
       name: "Samira Ali",
       role: "Co-Logistics Lead",
-      image: "@/../src/assets/profilepics/Samira Ali.jpeg",
+      image: samiraImg,
       linkedin: "https://www.linkedin.com/in/samira-ali-552220378/",
       emblems: log_emblems
     },
     {
       name: "Cindy Rocha",
       role: "Logistics Member",
-      image: "@/../src/assets/profilepics/Cindy Rocha.jpeg",
+      image: cindyImg,
       linkedin: "https://www.linkedin.com/in/cm-rocha/",
       emblems: log_emblems
     },
     {
       name: "Ekram Yenus",
       role: "Logistics Member",
-      image: "@/../src/assets/profilepics/Ekram Yenus.png",
+      image: ekramImg,
       linkedin: "https://www.linkedin.com/in/ekram-yenus-56410b387/",
       emblems: log_emblems
     },
     {
       name: "Het Patel",
       role: "Logistics Member",
-      image: "@/../src/assets/profilepics/Het Patel.png",
+      image: hetImg,
       linkedin: "https://www.linkedin.com/in/het-patel-168684388/",
       emblems: log_emblems
     },
     {
       name: "Simran Ashraf",
       role: "Logistics Member",
-      image: "@/../src/assets/profilepics/Simran Ashraf.jpeg",
+      image: simranImg,
       linkedin: "https://www.linkedin.com/in/simran-ashraf-973836342/",
       emblems: log_emblems
     },
     {
       name: "Therese Magpayo",
       role: "Logistics Member",
-      image: "@/../src/assets/profilepics/Therese Magpayo.jpeg",
+      image: thereseImg,
       linkedin: "https://www.linkedin.com/in/therese-magpayo/",
       emblems: log_emblems
     },
@@ -209,56 +252,56 @@ export default function Team() {
     {
       name: "Jason Carmona",
       role: "Outreach Lead",
-      image: "@/../src/assets/profilepics/Jason Carmona.jpeg",
+      image: jasonImg,
       linkedin: "https://www.linkedin.com/in/cs-jason-carmona/",
       emblems: outreach_emblems
     },
     { 
       name: "Alan Reyes",
       role: "Outreach Member",
-      image: "@/../src/assets/profilepics/unknown.jpg",
+      image: alanImg,
       linkedin: "https://www.linkedin.com/company/capture-the-flame/",
       emblems: outreach_emblems
     },
     { 
       name: "Diego Roa",
       role: "Outreach Member",
-      image: "@/../src/assets/profilepics/Diego Roa.jpeg",
+      image: diegoImg,
       linkedin: "https://www.linkedin.com/in/diego-roa-1b2840249/",
       emblems: outreach_emblems
     },
     { 
       name: "Jeff Benesisto",
       role: "Outreach Member",
-      image: "@/../src/assets/profilepics/Jeff Benesisto.jpeg",
+      image: jeffImg,
       linkedin: "https://www.linkedin.com/in/jeff-nathaniel-benesisto/",
       emblems: outreach_emblems
     },
     { 
       name: "Lisette Castanon",
       role: "Outreach Member",
-      image: "@/../src/assets/profilepics/Lisette Castanon.jpeg",
+      image: lisetteImg,
       linkedin: "https://www.linkedin.com/in/lisette-castanon/",
       emblems: outreach_emblems
     },
     { 
       name: "Neha Kamat",
       role: "Outreach Member",
-      image: "@/../src/assets/profilepics/Neha Kamat.jpeg",
+      image: nehaImg,
       linkedin: "https://www.linkedin.com/in/neha-kamat-/",
       emblems: outreach_emblems
     },
     { 
       name: "Stephanie Hermosillo",
       role: "Outreach Member",
-      image: "@/../src/assets/profilepics/unknown.jpg",
+      image: stephanieImg,
       linkedin: "https://www.linkedin.com/in/stephanie-hermosillo-465000244/",
       emblems: outreach_emblems
     },
     { 
       name: "Zona Noman",
       role: "Outreach Member",
-      image: "@/../src/assets/profilepics/Zona Noman.jpeg",
+      image: zonaImg,
       linkedin: "https://www.linkedin.com/in/zona-noman-a05479243/",
       emblems: outreach_emblems
     },
@@ -267,7 +310,7 @@ export default function Team() {
     {
       name: "Martha Barraza",
       role: "Web Dev Lead",
-      image: "@/../src/assets/profilepics/Martha Barraza.jpeg",
+      image: marthaImg,
       linkedin: "https://www.linkedin.com/in/martha-barraza/",
       emblems: webdev_emblems
     },
