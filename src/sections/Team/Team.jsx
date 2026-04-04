@@ -7,7 +7,7 @@ import outreach_emblems from "../../assets/pieces/ctf_emblems_outreach.svg";
 import webdev_emblems from "../../assets/pieces/ctf_emblems_webdev.svg";
 
 import codaImg from "../../assets/profilepics/Coda Richmond.jpeg";
-import fatimaImg from "../../src/assets/profilepics/Fatima.jpeg";
+import fatimaImg from "../../assets/profilepics/Fatima.jpeg";
 
 import charmiImg from "../../assets/profilepics/Charmi Sutariya.jpeg";
 import juliaImg from "../../assets/profilepics/Julia Bowman.jpeg";
@@ -48,6 +48,16 @@ import zonaImg from "../../assets/profilepics/Zona Noman.jpeg";
 
 import marthaImg from "../../assets/profilepics/Martha Barraza.jpeg";
 import aashikaImg from "../../assets/profilepics/Aashika Lilaramani.jpeg";
+import ayeImg from "../../assets/profilepics/Aye Kyawt Zin.jpg";
+import dylanImg from "../../assets/profilepics/Dylan Nguyen.jpeg";
+import teeganImg from "../../assets/profilepics/Teegan Springer.jpg";
+
+import aukovienImg from "../../assets/profilepics/Aukovien.png";
+import derickImg from "../../assets/profilepics/Derick Johnson.jpeg";
+import leiImg from "../../assets/profilepics/Lei Chen.jpeg";
+import lilyImg from "../../assets/profilepics/Lily Gross.jpeg";
+import jImg from "../../assets/profilepics/J Benitez.jpeg";
+import nefeliImg from "../../assets/profilepics/Nefeli Georgilas.png";
 
 export default function Team() {
   const directors = [
@@ -324,21 +334,21 @@ export default function Team() {
     {
       name: "Aye Kyawt Zin",
       role: "Web Dev Member",
-      image: "@/../src/assets/profilepics/Aye Kyawt Zin.jpg",
+      image: ayeImg,
       linkedin: "https://www.linkedin.com/in/ayekyawtzin/",
       emblems: webdev_emblems
     },
     {
       name: "Dylan Nguyen",
       role: "Web Dev Member",
-      image: "@/../src/assets/profilepics/Dylan Nguyen.jpeg",
+      image: dylanImg,
       linkedin: "https://www.linkedin.com/in/dylngu4915/",
       emblems: webdev_emblems
     },
     {
       name: "Teegan Springer",
       role: "Web Dev Member",
-      image: "@/../src/assets/profilepics/Teegan Springer.jpg",
+      image: teeganImg,
       linkedin: "https://www.linkedin.com/in/teegan-springer/",
       emblems: webdev_emblems
     },
@@ -348,37 +358,37 @@ export default function Team() {
     {
       name: "Aukovien",
       role: "Experience++",
-      pfp: "@/../src/assets/profilepics/Aukovien.png",
+      pfp: aukovienImg,
       linkedin: "https://www.linkedin.com/in/anarenkhzol/",
     },
     {
       name: "Derick Johnson",
       role: "Experience++",
-      pfp: "@/../src/assets/profilepics/Derick Johnson.jpeg",
+      pfp: derickImg,
       linkedin: "https://www.linkedin.com/in/derick-m-johnson/",
     },
     {
       name: "Lei Chen",
       role: "Experience++",
-      pfp: "@/../src/assets/profilepics/Lei Chen.jpeg",
+      pfp: leiImg,
       linkedin: "https://www.linkedin.com/in/lei-chen-uic/",
     },
     {
       name: "Lily Gross",
       role: "Experience++",
-      pfp: "@/../src/assets/profilepics/Lily Gross.jpeg",
+      pfp: lilyImg,
       linkedin: "https://www.linkedin.com/in/lily-gross-lbg/",
     },
     {
       name: "J Benitez",
       role: "Experience++",
-      pfp: "@/../src/assets/profilepics/J Benitez.jpeg",
+      pfp: jImg,
       linkedin: "https://www.linkedin.com/in/jbenit17/",
     },
     {
       name: "Nefeli Georgilas",
       role: "Experience++",
-      pfp: "@/../src/assets/profilepics/Nefeli Georgilas.png",
+      pfp: nefeliImg,
       linkedin: "https://www.linkedin.com/in/nefeli-georgilas/",
     },
   ]
