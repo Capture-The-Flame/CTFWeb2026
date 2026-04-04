@@ -37,17 +37,17 @@ import hetImg from "../../assets/profilepics/Het Patel.png";
 import simranImg from "../../assets/profilepics/Simran Ashraf.jpeg";
 import thereseImg from "../../assets/profilepics/Therese Magpayo.jpeg";
 
-import jasonImg from "@/../src/assets/profilepics/Jason Carmona.jpeg";
-import alanImg from "@/../src/assets/profilepics/unknown.jpg";
-import diegoImg from "@/../src/assets/profilepics/Diego Roa.jpeg";
-import jeffImg from "@/../src/assets/profilepics/Jeff Benesisto.jpeg";
-import lisetteImg from "@/../src/assets/profilepics/Lisette Castanon.jpeg";
-import nehaImg from "@/../src/assets/profilepics/Neha Kamat.jpeg";
-import stephanieImg from "@/../src/assets/profilepics/unknown.jpg";
-import zonaImg from "@/../src/assets/profilepics/Zona Noman.jpeg";
+import jasonImg from "../../assets/profilepics/Jason Carmona.jpeg";
+import alanImg from "../../assets/profilepics/unknown.jpg";
+import diegoImg from "../../assets/profilepics/Diego Roa.jpeg";
+import jeffImg from "../../assets/profilepics/Jeff Benesisto.jpeg";
+import lisetteImg from "../../assets/profilepics/Lisette Castanon.jpeg";
+import nehaImg from "../../assets/profilepics/Neha Kamat.jpeg";
+import stephanieImg from "../../assets/profilepics/unknown.jpg";
+import zonaImg from "../../assets/profilepics/Zona Noman.jpeg";
 
-import marthaImg from "@/../src/assets/profilepics/Martha Barraza.jpeg";
-import aashikaImg from "@/../src/assets/profilepics/Aashika Lilaramani.jpeg";
+import marthaImg from "../../assets/profilepics/Martha Barraza.jpeg";
+import aashikaImg from "../../assets/profilepics/Aashika Lilaramani.jpeg";
 
 export default function Team() {
   const directors = [
@@ -317,7 +317,7 @@ export default function Team() {
     {
       name: "Aashika Lilaramani",
       role: "Web Dev Member",
-      image: "@/../src/assets/profilepics/Aashika Lilaramani.jpeg",
+      image: aashikaImg,
       linkedin: "https://www.linkedin.com/in/aashika-lilaramani-61b112207/",
       emblems: webdev_emblems
     },
