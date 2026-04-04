@@ -10,7 +10,7 @@ export default function SocialMedia() {
 
       <ul className="social-links">
         <li>
-          <a  href="https://www.instagram.com/wicysatuic"
+          <a  href="https://www.instagram.com/capturetheflame.chicago/"
               target="_blank"
               rel="noopener noreferrer"
               className="social-gem">
@@ -20,7 +20,7 @@ export default function SocialMedia() {
         </li>
         
         <li>
-          <a  href="https://www.linkedin.com/company/wicysuic"
+          <a  href="https://www.linkedin.com/company/capture-the-flame"
               target="_blank"
               rel="noopener noreferrer"
               className="social-gem">
@@ -30,7 +30,7 @@ export default function SocialMedia() {
         </li>
 
         <li>
-          <a  href="https://discord.gg/3bR8XUnzp5"
+          <a  href="https://discord.gg/RTSwT29Pmz"
               target="_blank"
               rel="noopener noreferrer"
             className="social-gem">
