@@ -187,10 +187,10 @@ export default function FAQ({ onOpen, onClose }) {
                           width: config.textStyles.width
                         }}
                       >
-                        <h3 className="page-title-mini" style={{ fontSize: isMobile ? `clamp(12px, ${config.textStyles.fontSize}, 32px)` : config.textStyles.fontSize }}>
+                        <h3 className="page-title-mini" style={{ fontSize: isMobile ? `clamp(12px, ${config.textStyles.fontSize}, 24px)` : `clamp(10px, ${config.textStyles.fontSize}, 14px)` }}>
                           {item.text.title}
                         </h3>
-                        <p className="page-body-mini" style={{ fontSize: isMobile ? `clamp(10px, ${config.textStyles.bodySize}, 20px)` : config.textStyles.bodySize }}>
+                        <p className="page-body-mini" style={{ fontSize: isMobile ? `clamp(10px, ${config.textStyles.bodySize}, 20px)` : `clamp(10px, ${config.textStyles.bodySize}, 15px)` }}>
                           {item.text.body}
                         </p>
                       </div>

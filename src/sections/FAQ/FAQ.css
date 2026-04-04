@@ -244,16 +244,16 @@
 /* =================
     Mobile devices
    ================ */
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   .board-container { padding: 60px 20px; }
-  .board-small-frame { width: min(70vw, 320px); left: 15; }
+  .board-small-frame { width: clamp(150px, 60vw, 350px); left: 15; }
   
   .board-frame { width: 98vw; height: 98vh; }
   .board-big { width: 100% !important; height: 100% !important; }
   
-  .board-close-btn { top: 4%; right: 2%; font-size: 25px; }
+  .board-close-btn { top: 4%; right: 2%; font-size: clamp(25px, 6vw, 50px); }
 
-  .carousel-arrow { position: absolute; top: 50%; transform: translateY(-80%); font-size: 40px; background: transparent; color: #D8BC94; border: none; z-index: 100; }
+  .carousel-arrow { position: absolute; top: 50%; transform: translateY(-80%); font-size: clamp(40px, 10vw, 70px); background: transparent; color: #D8BC94; border: none; z-index: 100; }
   .carousel-arrow.left { left: 7%; }
   .carousel-arrow.right { left: 92%; transform: translate(-100%, -80%);}
 
