@@ -303,7 +303,7 @@
 .special-thanks {
     color: #000000;
     position: relative;
-    background-image: url('@/../src/assets/pieces/nameplate.svg');
+    background-image: url('../../assets/pieces/nameplate.svg');
     background-size: contain; 
     background-position: center 0px;
     background-repeat: no-repeat;
