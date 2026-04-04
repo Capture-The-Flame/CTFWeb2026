@@ -6,7 +6,7 @@ import log_emblems from "../../assets/pieces/ctf_emblems_log.svg";
 import outreach_emblems from "../../assets/pieces/ctf_emblems_outreach.svg";
 import webdev_emblems from "../../assets/pieces/ctf_emblems_webdev.svg";
 
-import codaImg from "../../src/assets/profilepics/Coda Richmond.jpeg";
+import codaImg from "../../assets/profilepics/Coda Richmond.jpeg";
 import fatimaImg from "../../src/assets/profilepics/Fatima.jpeg";
 
 import charmiImg from "../../assets/profilepics/Charmi Sutariya.jpeg";
