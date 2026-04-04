@@ -532,3 +532,14 @@ footer > h1 {
     margin: 0 auto;
   }
 }
+
+@media (max-width: 540px) {
+  .footer {
+    height: auto;
+    margin: 20px auto;
+  }
+
+  .footer-text {
+    line-height: 0.5;
+  }
+}
