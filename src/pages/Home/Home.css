@@ -340,6 +340,12 @@ footer > h1 {
   align-self: center;
 }
 
+.footerDiv img {
+  max-width: 200px;
+  height: auto; /* aspect ratio */
+  object-fit: contain; /* no stretching */
+}
+
 .wicys {
   height:clamp(100px,1vw,500px); 
   width:clamp(200px,1vw,500px);
@@ -536,7 +542,7 @@ footer > h1 {
 @media (max-width: 540px) {
   .footer {
     height: auto;
-    margin: 20px auto;
+    /* margin: 20px auto; */
   }
 
   .footer-text {
