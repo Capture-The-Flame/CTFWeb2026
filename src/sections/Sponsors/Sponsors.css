@@ -81,18 +81,20 @@
 
 @media (max-width: 768px) {
   .banner-safezone {
-    align-items: flex-start;
+    /*align-items: flex-start;
     padding-top: 3rem;
-    padding-bottom: 1rem;
+    padding-bottom: 1rem;*/
+    align-items: flex-end;
+    padding-top: clamp(3rem, 12vw, 14rem);
   }
 
   .banner-row {
     gap: 1rem;
   }
 
-  .banner img {
+  /*.banner img {
     aspect-ratio: auto;
-  }
+  }*/
 
   .banner--featured .banner-logo img {
     transform: translateY(-10px) scale(var(--scale-x), var(--scale-y));
