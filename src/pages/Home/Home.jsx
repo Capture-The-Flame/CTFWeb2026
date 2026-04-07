@@ -144,17 +144,19 @@ export default function Home() {
                 </div>
             </section>
             
-            <footer className="footer">
-                <a href="https://www.instagram.com/wicysatuic/" target="_blank" rel="noopener noreferrer">
-                <img src={wicys} className="footer-logo wicys" />
-                </a>
-                <div className="footer-text">
-                    <h1>University of Illinois Chicago</h1>
-                    <h1>Capture the Flame</h1>
+            <footer>
+                <div class="footerDiv">
+                    <a href="https://www.instagram.com/wicysatuic/" target="_blank" rel="noopener noreferrer">
+                    <img src={wicys} className="footer-logo wicys" />
+                    </a>
+                    <div className="footer-text">
+                        <h1>University of Illinois Chicago</h1>
+                        <h1>Capture the Flame</h1>
+                    </div>
+                    <a href="https://www.instagram.com/logicaatuic/" target="_blank" rel="noopener noreferrer">
+                    <img src={logica} className="footer-logo logica" />
+                    </a>
                 </div>
-                <a href="https://www.instagram.com/logicaatuic/" target="_blank" rel="noopener noreferrer">
-                <img src={logica} className="footer-logo logica" />
-                </a>
             </footer>
         </div>
     )
