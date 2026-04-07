@@ -34,7 +34,8 @@ export default function Sponsors() {
                   src={sponsor.logo}
                   alt={`${sponsor.name} logo`}
                   style={{
-                    transform: `scale(${sponsor.scaleX || 0.7}, ${sponsor.scaleY || 0.7})`,
+                    "--scale-x": sponsor.scaleX || 0.7,
+                    "--scale-y": sponsor.scaleY || 0.7,
                   }}
                 />
               </div>
