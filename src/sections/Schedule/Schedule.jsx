@@ -67,18 +67,11 @@ const mainSchedule = [
     ]
   },
   {
-    time: "6:30 P.M. - 7:30 P.M.",
+    time: "6:30 P.M. - 8:00 P.M.",
     eventName: "Networking Fair",
     details: [
       "Attendees will connect with event sponsors and industry professionals during the networking session.",
       "This is a great opportunity for students to learn about potential internships and job opportunities from partner companies.",
-    ]
-  },
-  {
-    time: "7:30 P.M. - 8:00 P.M.",
-    eventName: "Solutions Workshop",
-    details: [
-      "Review solutions with Experience team and mentors!",
     ]
   },
   {
