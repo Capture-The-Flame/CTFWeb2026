@@ -33,7 +33,7 @@ const FAQ_CONTENT = {
     laptop: { 
       styles: { rot: "0deg", top: "22%", left: "50%", width: "20%" },
       textStyles: { top: "20%", left: "10%", width: "80%", fontSize: "1.5vw", bodySize: "1.3vw" },
-      button: {bottom: "20%", right: "8%"} 
+      button: {bottom: "20%", right: "20%"} 
     },
     mobile: { 
       styles: { pageRot: "0deg", textRot: "0deg", top: "30%", left: "43%", width: "40%" },
@@ -60,8 +60,8 @@ const FAQ_CONTENT = {
     text: { title: "Must I be a UIC student to participate?", body: "No! The competition is available to any Chicagoland Universities!" },
     laptop: { 
       styles: { rot: "0deg", top: "65%", left: "15%", width: "18%" },
-      textStyles: { top: "18%", left: "12%", width: "75%", fontSize: "1.3vw", bodySize: "1.1vw" },
-      button: {bottom: "20%", right: "8%"} 
+      textStyles: { top: "10%", left: "12%", width: "75%", fontSize: "1.3vw", bodySize: "1.1vw" },
+      button: {bottom: "20%", right: "20%"} 
     },
     mobile: { 
       styles: { pageRot: "0deg", textRot: "0deg", top: "30%", left: "16%", width: "40%" },
@@ -89,7 +89,7 @@ const FAQ_CONTENT = {
     laptop: { 
       styles: { rot: "0deg", top: "60%", left: "50%", width: "20%" },
       textStyles: { top: "15%", left: "12%", width: "76%", fontSize: "1.3vw", bodySize: "1.2vw" },
-      button: {bottom: "20%", right: "8%"} 
+      button: {bottom: "20%", right: "20%"} 
     },
     mobile: { 
       styles: { pageRot: "0deg", textRot: "0deg", top: "30%", left: "43%", width: "40%" },
