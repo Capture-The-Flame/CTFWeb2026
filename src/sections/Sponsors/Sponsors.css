@@ -34,16 +34,18 @@
 
 /* Left-side Banners */
 .banner---1 {
-  transform: translateY(6px) rotate(-1.5deg);
+  /*transform: translateY(6px) rotate(-1.5deg);*/
+  transform: translateY(clamp(-18px, -4vw, -3px)) rotate(-1.5deg);
 }
 
 .banner--0 {
-  /*transform: rotate(-1.5deg)*/;
+  transform: translateY(clamp(-6px, -3px, 0px));
 }
 
 /* Right-side Banners */
 .banner--1 {
-  transform: translateY(6px) rotate(1.5deg);
+  /*transform: translateY(6px) rotate(1.5deg);*/
+  transform: translateY(clamp(-18px, -4vw, -3px)) rotate(1.5deg);
 }
 
 .banner--featured {
