@@ -259,6 +259,26 @@ html.lock-scroll body {
   background-color: rgba(0, 0, 0, 0.05); 
 }
 
+.visible {
+  color: #77511e;
+}
+
+.secret {
+  color: transparent;
+  background: transparent;
+}
+
+.visible::selection,
+.secret::selection {
+  color: #2b1d0e;
+  background: #f5deb3;
+}
+
+.block {
+  display: block;
+  margin-top: 0.5rem; /* spacing from paragraph */
+}
+
 /* =================
     Mobile devices
    ================ */

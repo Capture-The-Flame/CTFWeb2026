@@ -43,7 +43,7 @@ const FAQ_CONTENT = {
   },
   3: { 
     img: pageFour, 
-    text: { title: "Why would I do a CTF?", body: "CTF competitions are a great opportunity to showcase your cybersecurity capabilities and pick up some new tricks from other participants!" },
+    text: { title: "Why would I do a CTF?",   body: ( <> CTF competitions are a great opportunity to showcase your cybersecurity capabilities and pick up some new tricks from other <span className="flag-trigger"> <span className="visible"> participants!</span><span className="secret block">{"flame{n0t_my_jwl$!}"}</span></span> </>) },
     laptop: { 
       styles: { rot: "0deg", top: "27%", left: "32%", width: "18%" },
       textStyles: { top: "15%", left: "15%", width: "70%", fontSize: "1.5vw", bodySize: "1.3vw" },
