@@ -9,43 +9,61 @@ import StoneTablet from "../../assets/scheduleArt/FigmaStoneTablet.svg";
 
 const mainSchedule = [
   {
-    time: "6:30 A.M. - 8:00 A.M.",
+    time: "7:00 A.M. - 8:00 A.M.",
     eventName: "Check in",
+    location: "ARC Main Lobby (The Entrance Near Morgan Street)",
     details: [
-      "Participants will arrive at the venue with their teams (3 people each!) and proceed with the check-in process.",
-      "Breakfast will be provided for all attendees."
+      "Participants will arrive at the venue with their teams",
+      "(3 people per team!) and proceed with the check-in process.",
+      "Breakfast will be provided for attendees."
     ]
   },
   {
     time: "8:00 A.M. - 8:45 A.M.",
-    eventName: "Welcome/Keynote",
+    eventName: "Opening Ceremony & Zebra Keynote Speech",
+    location: "ARC 137",
     details: [
-      "The event will officially commence with an introduction to the CTF.",
-      "Following this, our guest keynote speaker will share insigts on their cybersecurity journey and the importantce of competitive CTFs."
+      "The event will officially commence with an introduction to the competition.",
+      "Following this, our guest keynote speaker  from Zebra will talk about their cybersecurity journey and the importance of cyber education.",
+      "",
+      "Presenter: Colin Chisholm, Director of Information Security Management at Zebra",
     ]
   },
   {
-    time: "9:00 A.M. - 9:55 A.M.",
-    eventName: "Workshop One",
+    time: "9:00 A.M. - 9:45 A.M.",
+    eventName: "Device Set Up With the CTF Experience Team!",
+    location: "ARC 137 + ARC 241",
     details: [
-      "To help participants prepare for the CTF, we will host two concurrent workshops.",
-      "These workshops will provide insights, tools, and techniques to navigate the challenges in this competition."
+      "To help participants prepare for the event, two concurrent workshops will be hosted.",
+      "Each workshop will provide set up instructions, one for Windows and the other for Mac.",
+      "We will also be sharing tools and techniques to navigate some of the challenges in this competition."
     ]
   },
   {
-    time: "10:00 A.M. - 10:55 A.M.",
-    eventName: "Workshop Two",
+    time: "9:45 A.M. - 10:15 A.M.",
+    eventName: "Break Time",
+    location: "Finish setting everything up!",
     details: [
-      "To help participants prepare for the CTF, we will host two concurrent workshops.",
-      "These workshops will provide insights, tools, and techniques to navigate the challenges in this competition."
+      "Last chance to finalize teams and set up CTF devices!",
+    ]
+  },
+  {
+    time: "10:00 A.M. - 10:45 A.M.",
+    eventName: "CompTIA Workshop",
+    location: "ARC 137",
+    details: [
+      "Our sponsor, CompTIA, will talk about their company, topics surrounding cybersecurity, and the importance of cyber education.",
+      "",
+      "Presenter: Anderson Lee, a Senior Manager in Intelligence Engagement at CompTIA, Inc."
     ]
   },
   {
     time: "11:00 A.M. - 6:00 P.M.",
-    eventName: "Competition",
+    eventName: "Competition Start!",
+    location: "ARC 137 (Main Competition Room) + ARC 241 (Mentor HQ)",
     details: [
       "The competition begins!",
-      "participants will engage in a series of challenges designed to test their problem solving, teamwork, and technical skills",
+      "Participants will engage in a series of challenges designed to test their problem solving, teamwork, and technical skills",
       "",
       "Mentor HQ:",
       "A designated room will be avalibale for students to seek guidance and support from industry professionals and mentors. This space will provide a supportive environment where participants can ask questions and gain insights to help them tackle the competition prompts effectively."
@@ -53,32 +71,37 @@ const mainSchedule = [
   },
   {
     time: "11:30 A.M. - 1:30 P.M.",
-    eventName: "Lunch Break",
+    eventName: "Lunch Avaliable",
+    location: "ARC Main Lobby",
     details: [
       "All Attendees, including students, mentors, and volunteers, will enjoy lunch.",
-      "This time will also give participants an opportunity to network and recharge for the competition ahead."
+      "This time will also give participants an opportunity to network and recharge.",
+      "Lunch will be avaliable to grab and go."
     ]
   },
   {
-    time: "6:00 P.M. - 7:00 P.M.",
-    eventName: "Dinner Break",
+    time: "6:00 P.M. - 7:30 P.M.",
+    eventName: "Dinner Avaliable",
+    location: "ARC Main Lobby",
     details: [
       "Dinner will be served during this time!",
     ]
   },
   {
-    time: "6:30 P.M. - 8:00 P.M.",
+    time: "6:30 P.M. - 7:30 P.M.",
     eventName: "Networking Fair",
+    location: "ARC Main Lobby",
     details: [
-      "Attendees will connect with event sponsors and industry professionals during the networking session.",
-      "This is a great opportunity for students to learn about potential internships and job opportunities from partner companies.",
+      "Attendees will connect with event sponsors and our professional mentors during the networking session.",
+      "This is a great opportunity for students to meet each other, destress while getting dinner!",
     ]
   },
   {
-    time: "8:00 P.M. - 8:30 P.M.",
-    eventName: "Awards/Closing Ceremony",
+    time: "7:30 P.M. - 8:00 P.M.",
+    eventName: "Awards and Closing Ceremony",
+    location: "ARC 137",
     details: [
-      "The day will conclude with an awards ceremony where winners for both tracks (beginner and advanced) will be announced. A special hidden prize will also be awarded for the team with the highest accuracy in each track.",
+      "The day will conclude with an awards ceremony where winners for both tracks (beginner and advanced) will be announced!",
     ]
   },
 ];
@@ -278,7 +301,12 @@ export default function Schedule({ onOpen, onClose }) {
                         onClick={() => handleToggleEvent(index)}
                       >
                         <span className="time">{eventItem.time}</span>
-                        <span className="event">{eventItem.eventName}</span>
+                        <div className="event-info-wrapper">
+                          <span className="event">{eventItem.eventName}</span>
+                          {eventItem.location && (
+                            <span className="location">{eventItem.location}</span>
+                          )}
+                        </div>
                         <div className="caret">{isOpen ? '▲' : '▼'}</div>
                       </div>
                       {isOpen && (
