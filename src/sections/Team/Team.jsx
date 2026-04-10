@@ -43,7 +43,7 @@ import diegoImg from "../../assets/profilepics/Diego Roa.jpeg";
 import jeffImg from "../../assets/profilepics/Jeff Benesisto.jpeg";
 import lisetteImg from "../../assets/profilepics/Lisette Castanon.jpeg";
 import nehaImg from "../../assets/profilepics/Neha Kamat.jpeg";
-import stephanieImg from "../../assets/profilepics/unknown.jpg";
+import stephanieImg from "../../assets/profilepics/stephanie hermosillo.png";
 import zonaImg from "../../assets/profilepics/Zona Noman.jpeg";
 
 import marthaImg from "../../assets/profilepics/Martha Barraza.jpeg";
