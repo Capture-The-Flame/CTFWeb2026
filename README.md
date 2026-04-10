@@ -1,16 +1,103 @@
-# React + Vite
+<div align="center">
+<img src="./public/banner.svg">
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+Welcome to the **Capture the Flame 2026** Website source code. Capture the Flame 2026 was the second interation of our annual Capture the Flame competition, introducing new cybersecurity topics to over **225** registered competitors. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<div align="center">
+<img src="./public/landing.png">
+</div>
 
-## React Compiler
+Our CTF website was built entirely with **React** to showcase the team's eye for design and express our creativity. Being built and refined for six months, the team worked through a vigorious schedule to deliver a polished and impressive interface. 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This platform served as the central hub for our board to share essantial information, including the competitior shcedule, event details, and team introductions. With custom made art assets, we created an **immersive UI** that reflected the spirit of the competition.
 
-## Expanding the ESLint configuration
+<div align="center">
+<p> Schedule </p>
+<img src="./public/schedule.gif">
+</div>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<div align="center">
+<p> FAQ </p>
+<img src="./public/faq.gif">
+</div>
+
+## Contibutors
+
+<details>
+  <summary><b>Martha Barraza</b> – Team Lead</summary>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  LinkedIn: 
+  <a href="https://www.linkedin.com/in/martha-barraza/" style=" text-decoration: none;">
+    Here
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  Github:
+  <a href="https://github.com/marthabar" style="text-decoration: none;">
+    Here
+  </a>
+</details>
+
+<details>
+  <summary>Aashika Lilaramani</summary>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+  LinkedIn: 
+  <a href="https://www.linkedin.com/in/aashika-lilaramani-61b112207/" style=" text-decoration: none;">
+    Here
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  Github:
+  <a href="https://github.com/AashiLila" style="text-decoration: none;">
+    Here
+  </a>
+</details>
+
+<details>
+  <summary>Aye Kyawt Zin</summary>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+  LinkedIn: 
+  <a href="https://www.linkedin.com/in/ayekyawtzin/" style=" text-decoration: none;">
+    Here
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  Github:
+  <a href="https://github.com/akzin12" style="text-decoration: none;">
+    Here
+  </a>
+</details>
+
+<details>
+  <summary>Dylan Nguyen</summary>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+  LinkedIn: 
+  <a href="https://www.linkedin.com/in/dylngu4915/" style=" text-decoration: none;">
+    Here
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  Github:
+  <a href="https://github.com/dyl4915" style="text-decoration: none;">
+    Here
+  </a>
+</details>
+
+<details>
+  <summary>Teegan Springer</summary>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+  LinkedIn: 
+  <a href="https://www.linkedin.com/in/teegan-springer/" style=" text-decoration: none;">
+    Here
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  Github:
+  <a href="https://github.com/v1rul3nce" style="text-decoration: none;">
+    Here
+  </a>
+</details>
+
+--- 
+
+<div align="center">
+<img src="./public/dragon.png">
+</div>
