@@ -152,6 +152,11 @@ export default function Home() {
                     <div className="footer-text">
                         <h1>University of Illinois Chicago</h1>
                         <h1>Capture the Flame</h1>
+                        <h1>
+                            <a href="https://capturetheflame.ctfd.io/" target="_blank" rel="noopener noreferrer">
+                                CTFd
+                            </a>
+                        </h1>
                     </div>
                     <a href="https://www.instagram.com/logicaatuic/" target="_blank" rel="noopener noreferrer">
                     <img src={logica} className="footer-logo logica" />
